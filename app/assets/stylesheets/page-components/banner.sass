@@ -1,0 +1,100 @@
+.main-banner-wrap
+  position: relative
+  width: 100%
+  height: 100vh
+
+  .read-more
+    +x-align
+    bottom: -50px
+    padding: 0 20px
+    cursor: pointer
+    span
+      position: absolute
+      top: 15px
+      left: -20px
+      font-size: 12px
+      font-weight: 700
+      color: $green
+      +transition(.25s)
+      +rotate(-90deg)
+      text-transform: uppercase
+      letter-spacing: 2px
+    &:before
+      content: ''
+      display: block
+      width: 2px
+      height: 150px
+      background: $green
+      +transition(.25s)
+    &:hover
+      span
+        color: white
+      &:before
+        background: white
+    @media #{$small-only}
+      bottom: -30px
+      span
+        display: none
+      &:before
+        height: 80px
+
+  .inner-text
+    position: relative
+    top: 50%
+    +translate(0,-50%)
+    text-align: center
+
+    .corporate-label
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      margin-bottom: 20px
+      @media #{$small-only}
+        flex-direction: column
+      .abbreviation
+        background: $green
+        position: relative
+        flex-basis: 50%
+        p
+          font-family: 'Segoe'
+          font-size: 72px
+          letter-spacing: 5px
+          color: $dark
+          text-transform: uppercase
+          @media #{$small-only}
+            font-size: 36px
+          @media #{$medium-only}
+            font-size: 32px
+            margin-top: 25px
+      .full-name
+        background: $dark
+        padding: 20px 30px
+        @media #{$small-only}
+          padding: 10px
+        p
+          font-family: 'Segoe'
+          font-size: 24px
+          color: white
+          letter-spacing: 5px
+          text-transform: uppercase
+          @media #{$small-only}
+            font-size: 12px
+          @media #{$medium-only}
+            font-size: 21px
+
+    .regular
+      margin-bottom: 20px
+      color: white
+    .bold
+      color: white
+      text-transform: uppercase
+      font-weight: 700
+      @media #{$small-only}
+        display: none
+    .btn
+      margin-top: 50px
+      @media #{$small-only}
+        margin-top: 20px
+

@@ -1,0 +1,39 @@
+nav
+
+  .top.clearfix
+    p.small.floated
+      | тел:
+      a href="tel:+380971780837" title="Передзвонити нам" +38 (097) 178 08 37
+    .floated-right.clearfix
+      ul.floated
+        li
+          a title="Дізнайтесь про нас більше" про нас
+        li
+          a title="Наші статті" статті
+        li
+          a title="Цікаві новини" новини
+        li
+          a title="Як з нами зконтактувати" контакти
+      .toggle-language.floated
+        p.smalelr title="Перемкнути мову" en
+
+  .main
+    a.logo-container title="Повернутись на головну"
+      = inline_svg ('icons/ZRN-logo-v1.svg')
+    .menu-container
+      ul
+        li
+          a title="Дізнатись все про решітковий настил" решітковий настил
+        li
+          a title="Дізнатись все про сходові марші" сходові марші
+        li
+          a title="Правильний монтаж нашої продукції" монтаж
+        li
+          a title="Технічні параметри про нашу продукцію в деталях" технічний довідник
+        li
+          .calculate-btn.dark title="Скористайтесь калькулятором та розрахуйте вартість нашої продукції та послуг"
+            span
+              = inline_svg ('icons/ZRN-icons-calc-v1.svg')
+            p калькулятор
+
+    .menu-btn = inline_svg ('icons/ZRN-icon-manu-v1.svg')

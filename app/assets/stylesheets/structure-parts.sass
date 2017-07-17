@@ -1,0 +1,177 @@
+//     G E N E R A L
+
+.row.columns-left
+  .columns
+    float: left !important
+
+.dib
+  display: inline-block
+  vertical-align: middle
+  line-height: 1
+
+.clearfix
+  position: relative
+  +clearfix
+  .floated
+    float: left
+  .floated-right
+    float: right
+
+.float-right
+  @media #{$medium-up}
+    float: right !important
+.float-left
+  @media #{$medium-up}
+    float: left !important
+
+.mobile
+  @media #{$medium-up}
+    display: none
+.desktop
+  @media #{$small-only}
+    display: none
+
+.img-container
+  position: relative
+  width: 100%
+  height: 0
+  padding-bottom: 56%
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  overflow: hidden
+
+.img-bg
+  position: absolute
+  +fullsize
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  +transition(1s)
+
+.lightened
+  +grayscale
+  background-color: rgba(255,255,255,0.75)
+  background-blend-mode: lighten
+
+.darken
+  +grayscale
+  background-color: rgba(0,0,0,0.25)
+  background-blend-mode: darken
+
+//     P R O J E C T
+
+.btn
+  position: relative
+  padding: 20px 40px
+  border: 2px solid $green
+  display: inline-block
+  height: 64px
+  font-family: 'Segoe'
+  font-size: 14px
+  text-transform: uppercase
+  letter-spacing: 2px
+  overflow: hidden
+  color: $green
+  &:before
+    content: ''
+    position: absolute
+    width: 200%
+    height: 200%
+    top: -50%
+    left: -50px
+    background: url(#{asset_path('icons/plus.svg')})
+    background-size: 20px
+    opacity: 0
+    +transition(.4s)
+    transform: scale(0.5) rotate(-10deg)
+  &:hover
+    border: 2px solid white
+    background: white
+    +transition-delay(.2s)
+    &:before
+      transform: scale(2) rotate(10deg)
+      opacity: .3
+
+.calculate-btn
+  position: relative
+  display: inline-block
+  padding: 8px 16px
+  cursor: pointer
+  +transition(.25s)
+  span
+    display: inline-block
+    vertical-align: middle
+    width: 27px
+    height: 36px
+  p
+    display: inline-block
+    font-family: 'Segoe'
+    font-size: 14px
+    color: black
+    text-transform: uppercase
+    margin-left: 10px
+  &.dark
+    border: 2px solid $dark
+    svg
+      fill: $dark
+    p
+      color: black
+  &.green
+    border: 2px solid $green
+    svg
+      fill: $green
+    p
+      color: $green
+  &:hover
+    background: white
+    border: 2px solid white
+
+.social-links
+  li
+    display: inline-block
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+    a
+      width: 24px
+      height: 24px
+      border: 2px solid $green
+      svg
+        fill: $green
+        +transition(.25s)
+      &:hover
+        background: $green
+        svg
+          fill: $white
+
+.section-title
+  font-size: 14px
+  font-weight: 700
+  color: $blueGrey700
+  text-transform: uppercase
+  margin-bottom: 50px
+  letter-spacing: 2px
+  &.centered
+    text-align: center
+
+.section-indent
+  +padding-top(50px,50px,50px,70px)
+  +padding-bottom(50px,50px,50px,70px)
+
+.see-all-link
+  position: absolute
+  bottom: 30px
+  right: 30px
+  font-family: 'Segoe'
+  font-size: 14px
+  background: $green
+  color: $dark
+  padding: 10px 20px
+  text-transform: uppercase
+  letter-spacing: 2px
+  z-index: 1
+  +transition(.25s)
+  &:hover
+    background: darken($green,5%)
+    color: white
