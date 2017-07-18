@@ -26,7 +26,7 @@
 #= require fullpage_banner_height
 #= require header
 #= require characters_limit
-#= require menu
+#= require menu_and_popups
 #= require accordion
 #= require selectize-initialize
 #= require popups

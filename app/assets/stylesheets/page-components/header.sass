@@ -72,10 +72,93 @@ nav
     .menu-container
       width: 100%
       text-align: right
-      padding: 10px
-      ul
+      padding: 0 10px
+      & > ul
         display: none
-        li
+        ul
+          display: none
+          position: absolute
+          top: 79px
+          left: 0
+          background: $blueGrey800
+          padding-bottom: 5px
+          padding-right: 300px
+          text-align: left
+          li
+            position: initial
+            display: block
+            width: 300px
+            background: $dark
+            border-bottom: 1px solid $blueGrey800
+            overflow: hidden
+            a
+              position: relative
+              width: 100%
+              font-family: 'Segoe'
+              font-size: 14px
+              background: transparent
+              color: $blueGrey100
+              padding: 10px 30px 10px 20px
+              +translate(-4px,0)
+              +transition(.25s)
+              &:before
+                content: ''
+                display: block
+                position: absolute
+                width: 4px
+                height: 100%
+                top: 0
+                left: 0
+                background: $green
+
+            // examples
+            ul
+              position: absolute
+              top: 0
+              left: 300px
+              width: 300px
+              height: 100%
+              li
+                +fullsize
+                border-bottom: 0
+                background: $blueGrey800
+                &:hover
+                  a
+                    background: $blueGrey800
+                a
+                  padding: 60px
+                  text-align: center
+                  +translate(0,0)
+                  p
+                    margin: 20px 0
+                    color: white
+                    +transition(.25s)
+                  svg
+                    width: 20px
+                    margin: 0 auto
+                    fill: $blueGrey400
+                    +transition(.25s)
+                  &:before
+                    display: none
+                  &:hover
+                    .img-bg
+                      +scale(1.05)
+                    p
+                      color: $green
+                    svg
+                      +translate(5px,0)
+                      fill: white
+            &:hover
+              & > a
+                background: $blueGrey900
+                +translate(0,0)
+                color: $green
+              & > ul
+                display: inherit
+        
+        // menu main list style
+        & > li
+          position: relative
           display: inline-block
           vertical-align: middle
           a
@@ -83,14 +166,22 @@ nav
             font-size: 14px
             color: black
             text-transform: uppercase
-            padding: 10px 20px
-            &:hover
+            padding: 30px 20px
+
+          &:hover
+            & > a
+              background: darken($green,5%)
               color: white
+            & > ul
+              display: inherit
+
+
+
+      // show menu
       @media #{$large-up}
         ul
           display: block
-      @media #{$xxlarge-up}
-        padding: 20px
+
     .menu-btn
       position: absolute
       width: 40px

@@ -205,14 +205,17 @@
 
 
 .media-wrap
-  .floated
+  .floated 
     position: relative
     width: 100%
+    &:last-child
+      margin-top: 30px
     @media #{$large-up}
       width: 50%
       &:before
         +square
       &:last-child
+        margin-top: 0
         &:after
           content: ''
           position: absolute
@@ -262,6 +265,8 @@
     left: 0
     z-index: 1
     line-height: 4px
+    @media #{$small-only}
+      width: 100%
     .bx-pager-item
       display: inline-block
       width: calc(100% / 3)
@@ -282,15 +287,17 @@
     position: absolute
     bottom: 0
     left: 0
-    padding: 30px 30px 200px
+    padding: 30px 30px 220px
     @media #{$small-only}
       position: relative
+      // padding: 30px 30px 220px
     @media #{$medium-up}
       width: 50%
     .green-link
-      margin-top: 16px
+      margin-top: 36px
     .slide-description
-      position: absolute
+      +fullsize
+      padding: 30px
       opacity: 0
       +transition(opacity .5s)
       &.visible
@@ -299,6 +306,8 @@
     .title
       height: calc(24px * 1.2 * 4)
       overflow: hidden
+      @media #{$small-only}
+        height: calc(21px * 1.2 * 4)
   .slider-controls
     position: absolute
     right: 15px
@@ -331,6 +340,8 @@
     .title
       max-height: calc(24px * 1.2 * 2)
       overflow: hidden
+      @media #{$small-only}
+        max-height: calc(21px * 1.2 * 2)
   .date
     font-size: 12px
     color: $blueGrey400
@@ -349,4 +360,6 @@
     color: $dark
     font-weight: 700
     line-height: 1.2
+    @media #{$small-only}
+      font-size: 21px
 
