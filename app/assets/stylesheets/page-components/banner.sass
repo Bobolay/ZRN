@@ -1,3 +1,5 @@
+// banner pn main page
+
 .main-banner-wrap
   position: relative
   width: 100%
@@ -97,4 +99,42 @@
       margin-top: 50px
       @media #{$small-only}
         margin-top: 20px
+
+
+
+// banner rest pages (inner)
+
+.banner-wrap
+  position: relative
+  height: 80vh
+  text-align: center
+  &:after
+    content: ''
+    display: block
+    width: 2px
+    height: 80px
+    background: $green
+    bottom: 0
+    +x-align
+
+  .inner
+    +xy-align
+    svg
+      fill: $green
+      width: 20px
+      height: 20px
+    .banner-title
+      font-family: 'Segoe'
+      font-size: 48px
+      color: white
+      text-transform: uppercase
+      letter-spacing: 5px
+      @media #{$small-only}
+        font-size: 60px
+      @media screen and (min-width:1920px)
+        font-size: 72px
+  .banner-subtitle
+    font-size: 24px
+    color: white
+
 

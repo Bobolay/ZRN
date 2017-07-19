@@ -17,6 +17,7 @@
 # require plugins/scroll-banner
 #= require plugins/selectize.min
 #= require plugins/parallax.min
+#= require plugins/jquery.scrollNav.min
 
 #     I N I T I A L I Z E
 
@@ -33,3 +34,4 @@
 #= require tabs
 #= require navigation
 #= require links
+#= require scroll-nav-initialize

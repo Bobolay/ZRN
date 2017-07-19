@@ -363,3 +363,190 @@
     @media #{$small-only}
       font-size: 21px
 
+//     a b o u t     u s     p a g e
+
+.scroll-nav-container
+  @media #{$large-up}
+    margin-left: 400px
+.scroll-nav
+  position: absolute
+  width: 400px
+  left: 0
+  &.fixed
+    position: fixed
+    top: 50px
+
+.stuff-block
+  +dimension-block(calc(100% / 3), 120%)
+  &:after
+    content: ''
+    display: block
+    +fullsize
+    +transition(.5s)
+  .hover-block
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    padding-bottom: 30px
+    text-align: center
+    opacity: 0
+    +transition(opacity .5s)
+    z-index: 1
+    p
+      margin: initial
+    .name
+      font-family: 'Segoe'
+      font-size: 21px
+      color: $green
+      line-height: 1
+      text-transform: uppercase
+      letter-spacing: 1px
+    .position
+      font-size: 12px
+      color: white
+      text-transform: uppercase
+      margin: 10px 0
+    &:after
+      content: ''
+      display: block
+      width: 1px
+      height: 30px
+      background: $green
+      +x-align
+      bottom: 0
+  &:hover
+    &:after
+      background: rgba($dark,0.7)
+    .hover-block
+      opacity: 1
+
+.vacancies-list
+  margin: 20px 0
+  li
+    border-top: 1px solid $blueGrey200
+    &:last-child
+      border-bottom: 1px solid $blueGrey200
+    a
+      display: block
+      padding: 20px
+      +transition(.25s)
+      .position
+        font-family: 'Segoe'
+        font-size: 21px
+        color: $dark
+        text-transform: uppercase
+        line-height: 1
+        margin-bottom: 10px
+        +transition(.25s)
+        padding-right: 50px
+      .salary
+        font-size: 12px
+        color: $blueGrey600
+        text-transform: uppercase
+        letter-spacing: 1px
+        +transition(.25s)
+        margin-bottom: initial
+      svg
+        width: 20px
+        height: 20px
+        position: absolute
+        +y-align
+        right: 20px
+        +transition(.25s)
+        fill: $green
+      &:hover
+        text-decoration: none
+        background: $green
+        .position, .salary
+          color: white
+        svg
+          fill: $dark
+
+.client-block
+  +dimension-block(calc(100% / 4), 100%)
+  background: white
+  .img
+    +centered-inside
+    width: 80%
+    height: 80%
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
+
+.sertificate-block
+  +dimension-block(calc(100% / 3), 120%)
+  border: 2px solid $blueGrey200
+  .name
+    font-family: 'Segoe'
+    font-size: 14px
+    text-transform: uppercase
+    color: black
+    padding-bottom: 15px
+  .date
+    position: relative
+    margin-bottom: 20px
+    padding-bottom: 20px
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 50px
+      height: 1px
+      background: $green
+  .description
+    font-size: 12px
+    color: $blueGrey400
+    max-height: calc(12px * 8 * 1.5)
+    overflow: hidden
+  .pdf-info
+    position: absolute
+    bottom: 20px
+    left: 20px
+  .pdf-label
+    font-family: 'Segoe'
+    font-size: 12px
+    color: $green
+    text-transform: uppercase
+    background: $dark
+    letter-spacing: 1px
+    margin-right: 10px
+    padding: 5px 10px
+  .pdf-size
+    font-size: 12px
+    color: $blueGrey300
+    font-style: italic
+    &:before
+      content: '\0028'
+    &:after
+      content: '\00A0Mb\0029'
+  .hover-block
+    +fullsize
+    background: white
+    opacity: 0
+    +transition(opacity .5s)
+    .certificate-img
+      position: absolute
+      top: 20px
+      left: 30px
+      right: 30px
+      bottom: 30px
+      border: 2px solid $blueGrey800
+      background-position: center
+      background-size: contain
+      background-repeat: no-repeat
+    .donwload-icon
+      +centered-inside
+      width: 48px
+      height: 48px
+      background: $dark
+      svg
+        +centered-inside
+        width: 50%
+        height: 50%
+
+  &:hover
+    .hover-block
+      opacity: 1
