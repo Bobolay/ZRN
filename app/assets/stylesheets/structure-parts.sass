@@ -179,3 +179,31 @@
 .blocks-wrap
   +clearfix
   margin: 50px 0
+
+.remark-wrap
+  position: relative
+  text-align: center
+  +padding-top(50px,70px,80px,100px)
+  +padding-bottom(50px,70px,80px,100px)
+  background: $green
+  .smaller
+    color: $dark
+    text-transform: uppercase
+    font-weight: 700
+    letter-spacing: 1px
+  .title
+    font-family: 'Segoe'
+    font-size: 36px
+    color: white
+    text-transform: uppercase
+    line-height: 1
+    margin: 30px auto
+    width: 800px
+    max-width: 100%
+    @media #{$small-only}
+      font-size: 24px
+    @media screen and (min-width: 1920px)
+      font-size: 48px
+  .larger
+    color: white
+    letter-spacing: 2px

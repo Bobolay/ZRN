@@ -365,19 +365,78 @@
 
 //     a b o u t     u s     p a g e
 
+.about-wrap
+  position: relative
+  background: $dark
+  @media #{$large-only}
+    padding-left: 300px
+  @media #{$xlarge-up}
+    padding-left: 400px
+
+.about-bg
+  background: $blueGrey50
+  @media #{$large-only}
+    padding: 0 20px
+  @media #{$xlarge-up}
+    padding: 0 100px
+  @media screen and (min-width: 1920px)
+    padding: 0 200px
 .scroll-nav-container
-  @media #{$large-up}
-    margin-left: 400px
+  +padding-bottom(100px,120px,120px,150px)
+  
 .scroll-nav
   position: absolute
-  width: 400px
+  width: 300px
+  top: 100px
   left: 0
+  padding: 0 30px
+  display: none
+  @media #{$large-up}
+    display: block
+  @media #{$xlarge-up}
+    width: 400px
+    padding: 0 80px
   &.fixed
     position: fixed
-    top: 50px
+    top: 120px
+  .scroll-nav__heading
+    display: none
+  .scroll-nav__item
+    .scroll-nav__link
+      display: block
+      position: relative
+      font-size: 14px
+      padding: 10px 0
+      color: $green
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 2px
+      padding-left: 60px
+      &:before, &:after
+        content: ''
+        display: block
+        width: 50px
+        height: 1px
+        position: absolute
+        top: 18px
+        left: 0
+      &:before
+        background: $green
+      &:after
+        background: white
+        width: 40px
+        +transition(.5s)
+    &.active
+      .scroll-nav__link
+        color: white
+        &:after
+          width: 10px
+
 
 .stuff-block
   +dimension-block(calc(100% / 3), 120%)
+  @media #{$small-only}
+    +dimension-block(calc(100% / 2), 120%)
   &:after
     content: ''
     display: block
@@ -431,6 +490,8 @@
       display: block
       padding: 20px
       +transition(.25s)
+      @media #{$small-only}
+        padding: 20px 0
       .position
         font-family: 'Segoe'
         font-size: 21px
@@ -440,6 +501,9 @@
         margin-bottom: 10px
         +transition(.25s)
         padding-right: 50px
+        @media #{$small-only}
+          font-size: 16px
+          padding-right: 30px
       .salary
         font-size: 12px
         color: $blueGrey600
@@ -455,6 +519,8 @@
         right: 20px
         +transition(.25s)
         fill: $green
+        @media #{$small-only}
+          right: 0
       &:hover
         text-decoration: none
         background: $green
@@ -466,6 +532,8 @@
 .client-block
   +dimension-block(calc(100% / 4), 100%)
   background: white
+  @media #{$small-only}
+    +dimension-block(calc(100% / 2), 100%)
   .img
     +centered-inside
     width: 80%
@@ -477,6 +545,8 @@
 .sertificate-block
   +dimension-block(calc(100% / 3), 120%)
   border: 2px solid $blueGrey200
+  @media #{$small-only}
+    +dimension-block(calc(100%), 100%)
   .name
     font-family: 'Segoe'
     font-size: 14px

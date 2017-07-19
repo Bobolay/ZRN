@@ -3,11 +3,15 @@
   h1,h2,h3,h4,h5,h6
     margin: 100px 0 30px
     letter-spacing: 2px
+    @media #{$small-only}
+      margin: 70px 0 20px
 
   & > p
     margin-bottom: 20px
     color: $blueGrey700
     line-height: 1.875
+    @media #{$small-only}
+      margin-bottom: 16px
   p
     & > a
       color: $green
@@ -19,7 +23,7 @@
 
   blockquote
     position: relative
-    font-size: 36px
+    font-size: 30px
     font-style: italic
     color: black
     line-height: 1
@@ -54,6 +58,8 @@
         top: 0
         +x-align
         width: 60px
+    @media #{$xlarge-up}
+      font-size: 36px
 
   img
     margin: 30px 0

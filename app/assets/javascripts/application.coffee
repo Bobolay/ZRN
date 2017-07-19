@@ -32,6 +32,5 @@
 #= require selectize-initialize
 #= require popups
 #= require tabs
-#= require navigation
 #= require links
 #= require scroll-nav-initialize
