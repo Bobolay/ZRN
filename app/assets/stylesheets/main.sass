@@ -91,44 +91,9 @@
     @media #{$xxlarge-up}
       padding: 50px 50px 80px
   .details-btn
-    position: absolute
-    bottom: 0
-    right: 0
-    .small
-      display: inline-block
-      color: $green
-      text-transform: uppercase
-      letter-spacing: 2px
-      margin-right: 20px
-      +transition(.25s)
-      @media #{$small-only}
-        display: none
-    .square
-      display: inline-block
-      vertical-align: middle
-      width: 60px
-      height: 60px
-      position: relative
-      background: $green
-      +transition(.25s)
-      &:before
-        +square
-      svg
-        +centered-inside
-        fill: $dark
-        width: 25%
-        +transition(.25s)
-      @media #{$small-only}
-        width: 50px
-        height: 50px
     &:hover
       .small
         color: white
-      .square
-        background: darken($green,10%)
-        svg
-          fill: white
-          +translate(5px,0)
   &.fixed-height
     position: relative
     overflow: hidden
@@ -342,19 +307,6 @@
       overflow: hidden
       @media #{$small-only}
         max-height: calc(21px * 1.2 * 2)
-  .date
-    font-size: 12px
-    color: $blueGrey400
-    font-weight: 700
-    margin-bottom: 10px
-    text-transform: uppercase
-    letter-spacing: 2px
-    span
-      color: $green
-      margin-left: 6px
-      &:before
-        content: '|'
-        margin-right: 6px
   .title
     font-size: 24px
     color: $dark
@@ -382,7 +334,7 @@
   @media screen and (min-width: 1920px)
     padding: 0 200px
 .scroll-nav-container
-  +padding-bottom(100px,120px,120px,150px)
+  +padding-bottom(0,80px,100px,150px)
   
 .scroll-nav
   position: absolute
@@ -530,10 +482,12 @@
           fill: $dark
 
 .client-block
-  +dimension-block(calc(100% / 4), 100%)
+  +dimension-block(calc(100% / 3), 100%)
   background: white
   @media #{$small-only}
     +dimension-block(calc(100% / 2), 100%)
+  @media #{$xlarge-up}
+    +dimension-block(calc(100% / 4), 100%)
   .img
     +centered-inside
     width: 80%
@@ -620,3 +574,84 @@
   &:hover
     .hover-block
       opacity: 1
+
+.download-all-certificates
+  width: 100%
+  background: white
+  padding: 16px 0
+  text-align: center
+  @media #{$medium-up}
+    display: none
+  svg
+    position: relative
+    top: 4px
+    width: 20px
+    height: 20px
+  .smaller
+    color: $dark
+    font-weight: 700
+    margin: 0 10px
+  .pdf-size
+    font-size: 12px
+    color: $blueGrey300
+    font-style: italic
+    &:before
+      content: '\0028'
+    &:after
+      content: '\00A0Mb\0029'
+
+.blog-block
+  position: relative
+  background: white
+  margin-bottom: 30px
+  @media #{$small-only}
+    margin-bottom: 15px
+  .inner
+    padding: 30px 30px 80px
+    @media #{$small-only}
+      padding: 20px 20px 50px
+    @media #{$xxlarge-up}
+      padding: 30px 30px 100px
+  .title
+    font-size: 21px
+    text-transform: uppercase
+    color: $dark
+    font-weight: 700
+    height: calc(21px * 4 *1.25)
+    overflow: hidden
+    @media #{$small-only}
+      font-size: 18px
+      height: calc(18px * 4 *1.25)
+    @media #{$xxlarge-up}
+      font-size: 24px
+      height: calc(24px * 4 *1.25)
+
+.sticky-side-block
+  padding-top: 30px
+  @media #{$large-up}
+    position: absolute
+    &.fixed
+      position: fixed
+      top: 100px
+      z-index: 2
+      @media #{$xxlarge-up}
+        top: 140px
+  ul
+    position: relative
+    text-align: center
+    li
+      display: inline-block
+      margin: 10px
+    @media #{$large-up}
+      text-align: initial
+      li
+        display: block
+        margin: 10px auto
+    a
+      width: 36px
+      height: 36px
+      border: 2px solid $dark
+      &:hover
+        background: $dark
+        svg
+          fill: $green

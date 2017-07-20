@@ -61,6 +61,10 @@
 
 //     P R O J E C T
 
+.btn-holder
+  text-align: center
+  margin: 30px 0
+
 .btn
   position: relative
   padding: 20px 40px
@@ -127,6 +131,59 @@
     background: white
     border: 2px solid white
 
+.details-btn
+  position: absolute
+  bottom: 0
+  right: 0
+  .small
+    display: inline-block
+    color: $green
+    text-transform: uppercase
+    letter-spacing: 2px
+    margin-right: 20px
+    +transition(.25s)
+    @media #{$small-only}
+      display: none
+  .square
+    display: inline-block
+    vertical-align: middle
+    width: 60px
+    height: 60px
+    position: relative
+    background: $green
+    +transition(.25s)
+    &:before
+      +square
+    svg
+      +centered-inside
+      fill: $dark
+      width: 25%
+      +transition(.25s)
+    @media #{$small-only}
+      width: 50px
+      height: 50px
+  &:hover
+    .square
+      background: darken($green,10%)
+      svg
+        fill: white
+        +translate(5px,0)
+
+.show-more-btn
+  display: inline-block
+  font-family: 'Segoe'
+  font-size: 14px
+  color: $dark
+  text-transform: uppercase
+  letter-spacing: 1px
+  padding: 20px
+  border: 2px solid $dark
+  cursor: pointer
+  +transition(.25s)
+  &:hover
+    border: 2px solid $green
+    background: $green
+
 .social-links
   li
     display: inline-block
@@ -158,6 +215,9 @@
 .section-indent
   +padding-top(50px,50px,50px,70px)
   +padding-bottom(50px,50px,50px,70px)
+
+.bottom-indent
+  +padding-bottom(50px,50px,70px,100px)
 
 .see-all-link
   position: absolute
@@ -207,3 +267,37 @@
   .larger
     color: white
     letter-spacing: 2px
+
+.tag-container
+  position: relative
+  margin: 30px 0
+  span
+    font-size: 12px
+    text-transform: uppercase
+    color: $blueGrey700
+    font-weight: 700
+    margin-right: 20px
+  ul
+    display: inline-block
+    li
+      display: inline-block
+      font-family: 'Segoe'
+      font-size: 12px
+      text-transform: uppercase
+      color: $blueGrey600
+      padding: 6px 14px
+      letter-spacing: 1px
+      cursor: pointer
+      +transition(.25s)
+      &.active
+        color: $dark
+        background: $green
+      &:hover
+        color: $dark
+    @media #{$small-only}
+      display: block
+      margin-top: 10px
+
+.tag-related-block
+  &.hide
+    display: none

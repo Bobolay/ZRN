@@ -34,3 +34,5 @@
 #= require tabs
 #= require links
 #= require scroll-nav-initialize
+#= require filter-tag
+#= require sticky-side-block

@@ -6,4 +6,10 @@ class PagesController < ApplicationController
   def about
   end
 
+  def blog
+  end
+
+  def blog_one
+  end
+
 end
