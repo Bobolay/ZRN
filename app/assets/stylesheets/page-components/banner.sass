@@ -132,6 +132,8 @@
       letter-spacing: 5px
       line-height: 1
       margin: 10px 0
+      width: 1200px
+      max-width: 100%
       @media #{$small-only}
         font-size: 48px
       @media screen and (min-width:1920px)
@@ -139,5 +141,14 @@
   .banner-subtitle
     font-size: 24px
     color: white
+
+  &.inside-article
+    .banner-title
+      font-size: 40px
+      @media #{$small-only}
+        font-size: 32px
+      @media screen and (min-width: 1920px)
+        font-size: 48px
+
 
 

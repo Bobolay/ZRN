@@ -82,7 +82,7 @@
       letter-spacing: 1px
 
   & > ul
-    margin: 30px 0 50px
+    margin: 40px 0 60px
     li
       position: relative
       font-weight: 700
@@ -97,29 +97,46 @@
         position: absolute
         left: 0
         top: 10px
-      @media #{$large-up}
+      @media #{$xlarge-up}
+        padding-left: 0
+        &:before
+          left: -16px
 
 .one-wrap
-  +padding-bottom(100px,120px,120px,150px)
+  +padding-bottom(50px,80px,80px,120px)
   overflow: hidden
 
 .article-head
   position: relative
+  padding: 30px 0
   &:before
     content: ''
     display: block
     position: absolute
     width: 200%
     height: 100%
-    +translate(-30px,0)
+    +translate(-30px,-30px)
     background: $green
+    z-index: -1
   .date
     position: relative
     color: $dark
     margin-right: 20px
   .tag-container
     display: inline-block
+    margin: 0
     li
       background: $dark
       color: $green
+  .title
+    font-size: 21px
+    color: $dark
+    border-top: 1px solid $dark
+    margin-top: 10px
+    padding: 20px 0
+    line-height: 1.5
+    @media #{$small-only}
+      font-size: 18px
+    @media screen and (min-width: 1920px)
+      font-size: 24px
 

@@ -12,4 +12,10 @@ class PagesController < ApplicationController
   def blog_one
   end
 
+  def news
+  end
+
+  def new_one
+  end
+
 end
