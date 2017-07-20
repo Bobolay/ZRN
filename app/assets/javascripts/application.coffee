@@ -10,7 +10,7 @@
 #= require plugins/jquery.appear
 #= require plugins/clickout
 #= require plugins/datepick
-# require plugins/form
+#= require plugins/form
 #= require plugins/jquery.bxslider
 #= require plugins/jquery.scrolldelta
 #= require plugins/lightgallery.min
@@ -18,6 +18,7 @@
 #= require plugins/selectize.min
 #= require plugins/parallax.min
 #= require plugins/jquery.scrollNav.min
+#= require plugins/jquery.nice-select.min
 
 #     I N I T I A L I Z E
 
@@ -35,4 +36,5 @@
 #= require links
 #= require scroll-nav-initialize
 #= require filter-tag
+#= require filter-years
 #= require sticky-side-block

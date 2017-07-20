@@ -293,7 +293,7 @@
     background: white
     @media #{$large-up}
       +fullsize
-    ul
+    ul.news-list
       li
         padding: 20px 30px 30px
         border-bottom: 1px solid $blueGrey100
@@ -302,11 +302,11 @@
         @media #{$medium-up}
           &:nth-child(n+4)
             display: none
-    .title
-      max-height: calc(24px * 1.2 * 2)
-      overflow: hidden
-      @media #{$small-only}
-        max-height: calc(21px * 1.2 * 2)
+      .title
+        max-height: calc(24px * 1.2 * 2)
+        overflow: hidden
+        @media #{$small-only}
+          max-height: calc(21px * 1.2 * 2)
   .title
     font-size: 24px
     color: $dark

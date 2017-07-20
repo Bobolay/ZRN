@@ -24,19 +24,21 @@ $(document).ready(function() {
 
   //     v a l i d a t e
 
-  $("form").validate({
-    rules: {
-      name: {
-        required: true,
-        minlength: 3
-      },
-      email: {
-        required: true,
-        email: true
-      }
-    }
-  });
+  // $("form").validate({
+  //   rules: {
+  //     name: {
+  //       required: true,
+  //       minlength: 3
+  //     },
+  //     email: {
+  //       required: true,
+  //       email: true
+  //     }
+  //   }
+  // });
 
-
+  //     c u s t o m     s e l e c t
+  
+  $('select').niceSelect();
 
 });

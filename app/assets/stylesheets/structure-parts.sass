@@ -301,3 +301,65 @@
 .tag-related-block
   &.hide
     display: none
+
+ul.news-list
+  background: white
+  li
+    padding: 20px 30px 30px
+    border-bottom: 1px solid $blueGrey100
+    @media #{$small-only}
+      padding: 20px
+    @media #{$xxlarge-up}
+      padding: 30px 40px 40px
+    @media #{$medium-up}
+      &:nth-child(n+6)
+        display: none
+    &.hide
+      display: none
+  .img-holder
+    position: relative
+    width: 300px
+    float: left
+    margin-right: 20px
+    &:before
+      content: ''
+      display: block
+      padding-bottom: 56%
+    @media #{$small-only}
+      margin-bottom: 20px
+  .title
+    font-size: 24px
+    color: $dark
+    font-weight: 700
+    line-height: 1.2
+    max-height: calc(24px * 1.2 * 2)
+    overflow: hidden
+    @media #{$small-only}
+      font-size: 21px
+      max-height: calc(21px * 1.2 * 2)
+  .description
+    font-size: 13px
+    color: $blueGrey700
+    line-height: 1.75
+    margin-top: 10px
+    max-height: calc(13px * 1.75 * 3)
+    overflow: hidden
+
+.filter-years
+  margin: 60px 0 30px
+  p
+    float: left
+    font-size: 12px
+    color: $blueGrey700
+    text-transform: uppercase
+    font-weight: 700
+    letter-spacing: 1px
+    vertical-align: middle
+    height: 40px
+    line-height: 40px
+    margin-right: 20px
+  select
+    display: inline-block
+    width: 120px
+  @media #{$small-only}
+    width: 100%
