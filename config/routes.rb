@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     get "blog_one", action: "blog_one"
     get "news", action: "news"
     get "new_one", action: "new_one"
-    # get "contact-us", action: "contact_us"
+    get "contacts", action: "contacts"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]

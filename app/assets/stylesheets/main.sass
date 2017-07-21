@@ -655,3 +655,81 @@
         background: $dark
         svg
           fill: $green
+
+.contact-wrap
+  position: relative
+  +padding-top(60px,100px,140px,180px)
+  +padding-bottom(100px,100px,140px,180px)
+  .size-adjuster
+    +fullsize
+  #googleMap
+    height: 100%
+  .map-container
+    position: relative
+    margin-bottom: 30px
+    @media #{$small-only}
+      &:before
+        +square
+    @media #{$medium-only}
+      &:before
+        content: ''
+        display: block
+        padding-bottom: 56%
+    @media #{$large-up}
+      position: absolute
+      width: 50%
+      height: 100%
+      right: 0
+      top: 0
+      margin-bottom: 0
+
+  .title
+    font-family: 'Segoe'
+    font-size: 42px
+    color: $dark
+    text-transform: uppercase
+    @media #{$small-only}
+      font-size: 36px
+    @media screen and (min-width: 1920px)
+      font-size: 48px
+  .subtitle
+    position: relative
+    font-size: 18px
+    color: $dark
+    margin-bottom: 20px
+    padding-bottom: 20px
+    &:after
+      content: ''
+      width: 70px
+      height: 2px
+      position: absolute
+      bottom: 0
+      left: 0
+      background: $green
+  ul
+    margin-bottom: 50px
+    li
+      padding: 20px 0 30px
+      border-bottom: 1px solid $blueGrey200
+      .small
+        color: $blueGrey400
+        margin-bottom: 10px
+      .larger
+        color: $blueGrey900
+        font-weight: 700
+        margin: 10px 20px 10px 0
+        @media #{$small-only}
+          margin: 5px 20px 5px 0
+      .email
+        display: block
+        font-size: 18px
+        color: $green
+        font-weight: 700
+        font-style: italic
+  .btn-mobile-align
+    @media #{$small-only}
+      text-align: center
+      .green-link
+        margin-top: 20px
+  .green-link
+    display: inline-block

@@ -18,4 +18,7 @@ class PagesController < ApplicationController
   def new_one
   end
 
+  def contacts
+  end
+
 end
