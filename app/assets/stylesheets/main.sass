@@ -1,5 +1,3 @@
-// main-page pic-descr block
-
 .preview-wrap
   counter-reset: preview
 .preview-block
@@ -733,3 +731,56 @@
         margin-top: 20px
   .green-link
     display: inline-block
+
+.resh-nastyl-sidenav
+  background: white
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 400px
+    bottom: 0
+    left: 0
+    background: linear-gradient(transparent,white)
+    z-index: 2
+    pointer-events: none
+  @media #{$large-up}
+    position: absolute
+    width: 40%
+    height: 100%
+    right: 0
+    top: 0
+    padding: 0 30px
+  @media #{$xxlarge-up}
+    width: 36%
+    padding: 0 60px
+
+ol.resh-nastyl-list
+  position: relative
+  counter-reset: resh-nastyl-list
+  list-style: none
+  li
+    margin: 10px 0
+    counter-increment: resh-nastyl-list
+    &:before
+      content: counter(resh-nastyl-list)
+      display: inline-block
+      width: 20px
+      line-height: 20px
+      font-family: 'Segoe' 
+      font-size: 12px
+      text-align: center
+      background: $green
+      margin-right: 14px
+    a
+      font-family: 'Segoe'
+      font-size: 13px
+      color: $dark
+      text-transform: uppercase
+      letter-spacing: 1px
+      padding: 5px 0
+      &:hover
+        color: $green
+    @media screen and (min-width: 1920px)
+      a
+        font-size: 14px

@@ -121,8 +121,8 @@ function initialize() {
   
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-  var xCordinate = 49.7997055
-  var yCordinate = 24.0246802
+  var xCordinate = 49.269506
+  var yCordinate = 23.8144037
 
   if (w > 640){
     zoomZoom = 16;

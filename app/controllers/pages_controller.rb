@@ -21,4 +21,7 @@ class PagesController < ApplicationController
   def contacts
   end
 
+  def resh_nastyl
+  end
+
 end
