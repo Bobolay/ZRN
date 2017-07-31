@@ -786,3 +786,35 @@ ol.resh-nastyl-list
     @media screen and (min-width: 1920px)
       a
         font-size: 14px
+
+.shodovi_marshi_example
+  position: relative
+  .img
+    background-position: center
+    background-size: cover
+  .floated-right
+    padding: 30px 30px 50px
+    background: $dark
+  @media #{$small-only}
+    .img
+      padding-bottom: 56%
+  @media #{$medium-only}
+    .img
+      position: absolute
+      height: 100%
+    .img, .floated-right
+      width: 50%
+  @media #{$large-up}
+    .img
+      position: absolute
+      width: 60%
+      height: 100%
+    .floated-right
+      width: 40%
+      padding: 40px 40px 100px
+  @media #{$xxlarge-up}
+    .img
+      width: 65%
+    .floated-right
+      width: 35%
+      padding: 50px 50px 120px
