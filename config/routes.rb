@@ -9,6 +9,10 @@ Rails.application.routes.draw do
     get "new_one", action: "new_one"
     get "contacts", action: "contacts"
     get "resh_nastyl", action: "resh_nastyl"
+    get "resh_nastyl_one", action: "resh_nastyl_one"
+    get "shodovi_marshi", action: "shodovi_marshi"
+    get "installation", action: "installation"
+    get "technical_guide", action: "technical_guide"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]

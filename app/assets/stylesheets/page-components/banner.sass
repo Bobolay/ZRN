@@ -110,14 +110,16 @@
   position: relative
   height: 80vh
   text-align: center
-  &:after
-    content: ''
-    display: block
-    width: 2px
-    height: 80px
-    background: $green
-    bottom: 0
-    +x-align
+
+  &.with-line
+    &:after
+      content: ''
+      display: block
+      width: 2px
+      height: 80px
+      background: $green
+      bottom: 0
+      +x-align
 
   .inner
     width: 100%
@@ -154,5 +156,13 @@
       @media screen and (min-width: 1920px)
         font-size: 48px
 
+  .bottom-holder
+    position: absolute
+    width: 100%
+    bottom: 0
+    left: 0
+    text-align: right
+    .btn
+      +translate(0,50%)
 
 

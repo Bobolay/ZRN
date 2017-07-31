@@ -79,7 +79,7 @@
   color: $green
   cursor: pointer
   &:before
-    content: ''
+    // content: ''
     position: absolute
     width: 200%
     height: 200%
@@ -95,8 +95,8 @@
     background: white
     +transition-delay(.2s)
     &:before
-      transform: scale(2) rotate(10deg)
-      opacity: .3
+      // transform: scale(2) rotate(10deg)
+      // opacity: .3
   &.contact-btn
     color: $dark
     border: 2px solid $dark
@@ -104,6 +104,10 @@
     @media #{$medium-up}
       margin-right: 20px
 
+  &.green
+    color: $dark
+    border: 2px solid $dark
+    background: $green
 
 .calculate-btn
   position: relative
@@ -372,3 +376,71 @@ ul.news-list
     width: 120px
   @media #{$small-only}
     width: 100%
+
+.examples-wrap
+  position: relative
+  +padding-bottom(60px,100px,100px,120px)
+  &:after
+    content: ''
+    display: block
+    width: 100%
+    height: 80%
+    position: absolute
+    bottom: 0
+    left: 0
+    background: white
+    z-index: -1
+  .title
+    position: relative
+    font-size: 14px
+    color: $blueGrey700
+    font-weight: 700
+    letter-spacing: 2px
+    text-align: center
+    text-transform: uppercase
+    padding-bottom: 70px
+    &:after
+      content: ''
+      display: block
+      width: 2px
+      height: 50px
+      background: $green
+      +x-align
+      bottom: 0
+
+  .example-block
+    width: 100%
+    text-align: center
+    margin-bottom: 30px
+    .img
+      +img-container(120%)
+      margin-bottom: 10px
+    .hover-img
+      +xy-align
+      width: 48px
+      height: 48px
+      background: $dark
+      opacity: 0
+      +transition(opacity .25s)
+      svg
+        fill: $green
+        +centered-inside
+    .name
+      font-size: 24px
+      color: $blueGrey900
+      font-weight: 700
+      margin-bottom: 10px
+      +transition(.25s)
+    .small
+      color: $blueGrey400
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 1px
+      span
+        &:after
+          content: '\00A0'
+    &:hover
+      .hover-img
+        opacity: 1
+      .name
+        color: $green

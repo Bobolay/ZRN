@@ -24,4 +24,16 @@ class PagesController < ApplicationController
   def resh_nastyl
   end
 
+  def resh_nastyl_one
+  end
+
+  def shodovi_marshi
+  end
+
+  def installation
+  end
+
+  def technical_guide
+  end
+
 end
