@@ -7,16 +7,14 @@
 #     P L U G I N S
 
 #= require plugins/jquery-easing
-#= require plugins/jquery.appear
 #= require plugins/clickout
 #= require plugins/datepick
 #= require plugins/form
 #= require plugins/jquery.bxslider
 #= require plugins/jquery.scrolldelta
 #= require plugins/lightgallery.min
+#= require plugins/lg-thumbnail.min
 # require plugins/scroll-banner
-#= require plugins/selectize.min
-#= require plugins/parallax.min
 #= require plugins/jquery.scrollNav.min
 #= require plugins/jquery.nice-select.min
 
@@ -24,18 +22,15 @@
 
 #= require images.js
 #= require google_map
-#= require appear-initialize
 #= require bxslider
 #= require fullpage_banner_height
 #= require header
-#= require characters_limit
 #= require menu_and_popups
 #= require accordion
-#= require selectize-initialize
 #= require popups
 #= require tabs
-#= require links
 #= require scroll-nav-initialize
 #= require filter-tag
 #= require filter-years
 #= require sticky-side-block
+#= require lightgallery-initialize

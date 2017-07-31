@@ -68,6 +68,7 @@
     p
       color: white
       margin-bottom: 10px
+      line-height: 1.875
     ul
       margin-top: 30px
       li a
@@ -818,3 +819,107 @@ ol.resh-nastyl-list
     .floated-right
       width: 35%
       padding: 50px 50px 120px
+
+.installation-collage-wrap
+  // +padding-top(50px,100px,120px,150px)
+  +padding-bottom(50px,100px,120px,150px)
+  .square
+    position: relative
+    width: calc(33% - 1px)
+    margin: 1px
+    background-position: center
+    background-size: cover
+    &:before
+      +square
+    &:first-child
+      width: 66%
+    a
+      display: block
+      +fullsize
+    img
+      display: none
+
+.principles-wrap
+  +padding-bottom(60px,100px,100px,120px)
+
+.principle-block
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  counter-increment: preview
+  margin-bottom: 0.9375rem
+  @media #{$small-only}
+    flex-direction: column
+    margin-bottom: 0.625rem
+  @media #{$xxlarge-up}
+    margin-bottom: 30px
+  .img-holder
+    position: relative
+    flex-basis: 45%
+    overflow: hidden
+    @media #{$small-only}
+      padding-bottom: 56%
+  .description
+    position: relative
+    flex-basis: 55%
+    background: $dark
+  .label
+    position: relative
+    display: inline-block
+    margin-top: 50px
+    padding: 15px 30px
+    font-family: 'Segoe'
+    font-size: 30px
+    color: $green
+    +transition(.25s)
+    &:before
+      content: '0' counter(preview)
+      position: absolute
+      width: 70px
+      height: 100%
+      top: 0
+      left: 0
+      line-height: 70px
+      text-align: center
+      background: $dark
+      color: $dark
+      background: $green
+      letter-spacing: 2px
+      +translate(-100%,0)
+    @media #{$small-only}
+      margin-top: 0
+      font-size: 18px
+      width: 100%
+      padding-left: 70px
+      &:before
+        width: 56px
+        line-height: 56px
+        +translate(0,0)
+  .inner-text
+    padding: 30px 30px 100px
+    p
+      color: white
+      margin-bottom: 10px
+      line-height: 1.875
+    ul
+      margin-top: 30px
+      li a
+        position: relative
+        font-size: 14px
+        color: $green
+        padding: 4px 0 4px 10px
+        &:before
+          content: '/ '
+          position: absolute
+          left: 0
+        &:hover
+          color: white
+          text-decoration: underline
+      @media #{$large-up}
+        column-count: 2
+    @media #{$small-only}
+      padding: 20px 20px 60px
+    @media #{$xxlarge-up}
+      padding: 50px 50px 80px

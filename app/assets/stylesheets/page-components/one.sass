@@ -9,6 +9,9 @@
       margin: 50px 0 30px
       @media #{$small-only}
         margin: 30px 0
+  &.inside-installation
+    h1,h2,h3,h4,h5,h6
+      text-transform: uppercase
 
   & > p
     margin-bottom: 20px
@@ -16,6 +19,12 @@
     line-height: 1.875
     @media #{$small-only}
       margin-bottom: 16px
+  & > i
+    display: inline-block
+    font-size: 21px
+    color: $dark
+    font-style: italic
+    margin-bottom: 20px
   p
     & > a
       color: $green
@@ -115,6 +124,7 @@
     & > p
       color: white
     & > i
+      font-size: 18px
       color: $green
       font-style: italic
 
