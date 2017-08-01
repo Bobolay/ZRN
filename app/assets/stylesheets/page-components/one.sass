@@ -14,7 +14,8 @@
     h1,h2,h3,h4,h5,h6
       text-transform: uppercase
 
-  & > p
+  // & > p
+  p
     margin-bottom: 20px
     color: $blueGrey700
     line-height: 1.875
@@ -24,6 +25,11 @@
     display: inline-block
     font-size: 21px
     color: $dark
+    font-style: italic
+    margin-bottom: 20px
+  i
+    display: block
+    color: $blueGrey700
     font-style: italic
     margin-bottom: 20px
   p
@@ -131,6 +137,7 @@
 
 .one-wrap
   position: relative
+  +padding-top(50px,80px,80px,100px)
   +padding-bottom(50px,80px,80px,120px)
   overflow: hidden
 

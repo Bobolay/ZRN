@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     get "shodovi_marshi", action: "shodovi_marshi"
     get "installation", action: "installation"
     get "technical_guide", action: "technical_guide"
+    get "technical_guide_one", action: "technical_guide_one"
+    get "technical_loading_table", action: "technical_loading_table"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]

@@ -36,4 +36,10 @@ class PagesController < ApplicationController
   def technical_guide
   end
 
+  def technical_guide_one
+  end
+
+  def technical_loading_table
+  end
+
 end
