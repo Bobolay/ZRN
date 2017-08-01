@@ -498,10 +498,12 @@
     background-repeat: no-repeat
 
 .sertificate-block
-  +dimension-block(calc(100% / 3), 120%)
+  +dimension-block(calc(100% / 2), 120%)
   border: 2px solid $blueGrey200
   @media #{$small-only}
     +dimension-block(calc(100%), 100%)
+  @media #{$xxlarge-up}
+    +dimension-block(calc(100% / 3), 120%)
   .name
     font-family: 'Segoe'
     font-size: 14px
@@ -943,3 +945,16 @@ ol.technical-quide-list
     margin-bottom: 20px
     @media #{$medium-up}
       margin-top: 100px
+
+.small-scheme-block
+  margin-bottom: 30px
+  img
+    width: 100%
+  p
+    font-size: 12px
+    color: $grey900
+    line-height: 1
+    span
+      color: $green
+      &:after
+        content: '\00A0\2014\00A0'

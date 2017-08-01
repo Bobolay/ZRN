@@ -5,3 +5,99 @@
   .inner
     = inline_svg ('icons/ZRN-icons-logohren-v1.svg')
     p.banner-title Таблиця навантажень зварного настилу
+
+.one-wrap.article-content
+  .row
+    .columns.large-8
+
+      h2 Пояснения к таблице нагрузок сварного решетчатого настила
+      p Все данные в таблицах нагрузок рассчитаны для стали S 235 либо ее аналогов (St 37-2, Ст3сп по ГОСТ).
+
+      table
+        tr
+          th Для комірки t x q
+          td 34.3 x 38.1
+          td значення з таблиці
+          td rowspan="2"
+            img src=asset_path('photo/scheme-1.jpg')
+        tr
+          th Для комірки t x q
+          td
+            p 34.3 x 38.1
+            p 33.4 x 31.5
+            p 12.3 x 43.2
+          td применяется  коэффициент 0,95 от значений в таблице
+  
+  .row
+    .columns.medium-6.large-3
+      .small-scheme-block
+        img src=asset_path('photo/scheme-1.jpg')
+        p
+          span Fv
+          | распределенная нагрузка в кг/м2
+    .columns.medium-6.large-3
+      .small-scheme-block
+        img src=asset_path('photo/scheme-1.jpg')
+        p
+          span Fv
+          | распределенная нагрузка в кг/м2
+    .columns.medium-6.large-3
+      .small-scheme-block
+        img src=asset_path('photo/scheme-1.jpg')
+        p
+          span Fv
+          | распределенная нагрузка в кг/м2
+    .columns.medium-6.large-3
+      .small-scheme-block
+        img src=asset_path('photo/scheme-1.jpg')
+        p
+          span Fv
+          | распределенная нагрузка в кг/м2
+
+
+  .row
+    .columns.medium-5
+      p Для решетчатых настилов с зубьями противоскольжения применяются следующие понижающие коэффициенты:
+  .row
+    .columns.medium-5.large-6
+      table
+        tr
+          th Градус кута монтування настилу
+          th Відповідний клас протискользіння
+        tr
+          td 6-10
+          td r9
+        tr
+          td 10-19
+          td r10
+        tr
+          td 19-27
+          td r11
+        tr
+          td 27-35
+          td r12
+        tr
+          td > 35
+          td r13
+    .columns.medium-7.large-6
+      i
+        | Допустимое напряжение стали на сжатие и растяжение &mdash; 
+        span 1600
+        | кг/см
+      i
+        | Коэффициент безопасности до предела пластичности &mdash; 
+        span 1.5
+      i
+        | Коэффициент безопасности до предела прочности на разрыв &mdash; 
+        span 2.35
+      i
+        | Опора решетки должна быть равной высоте несущей полосы, но в любом случае не меньше 30 мм.
+
+
+
+
+.remark-wrap
+  .row
+    .columns
+      p.smaller Наступний розділ
+      p.title Таблиця навантаження пресованого настилу
