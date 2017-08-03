@@ -15,6 +15,9 @@ Rails.application.routes.draw do
     get "technical_guide", action: "technical_guide"
     get "technical_guide_one", action: "technical_guide_one"
     get "technical_loading_table", action: "technical_loading_table"
+    get "terms_of_use", action: "terms_of_use"
+    get "examples", action: "examples"
+    get "not_found", action: "not_found"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]
