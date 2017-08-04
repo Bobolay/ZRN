@@ -17,6 +17,8 @@
 # require plugins/scroll-banner
 #= require plugins/jquery.scrollNav.min
 #= require plugins/jquery.nice-select.min
+#= require plugins/jquery.validate.min
+#= require plugins/messages_uk
 
 #     I N I T I A L I Z E
 
@@ -34,3 +36,4 @@
 #= require filter-years
 #= require sticky-side-block
 #= require lightgallery-initialize
+#= require form

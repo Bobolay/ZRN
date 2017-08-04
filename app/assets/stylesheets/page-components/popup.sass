@@ -1,27 +1,66 @@
-// .popup-wrapper
+.popup-wrap
+  position: fixed
+  width: 100%
+  height: 100vh
+  overflow: auto
+  z-index: 11
+  background: white
+  display: none
+  z-index: 12
+  &.opened
+    display: block
+  
 
-//   position: fixed
-//   width: 100%
-//   height: auto
-//   min-height: 100vh
-//   background: rgba($brown900, .97)
-//   z-index: 9999
-//   opacity: 0
-//   pointer-events: none
-//   +transition(0.25s)
+  .close-popup-btn
+    +x-align
+    width: 50px
+    height: 50px
+    top: 0
+    background: $green
+    +transition(.25s)
+    cursor: pointer
+    z-index: 1
+    svg
+      +centered-inside
+      +transition(.25s)
+      width: 14px
+      height: 14px
+    &:hover
+      background: $dark
+      svg
+        fill: $green
 
-//   .close-popup
-//     position: absolute
-//     top: 30px
-//     right: 30px
-//     width: 20px
-//     height: 20px
-//     cursor: pointer
-//     svg
-//       width: 100%
-//       height: 100%
-//       fill: $brown200
-//     &:hover
-//       svg
-//         fill: #F8F7F3
+  .inner-holder
+    +y-align
+    width: 100%
+    padding-top: 50px
 
+.calculator-wrap
+  position: relative
+  background: $blueGrey50
+  padding: 30px
+  h2, h3
+    text-transform: uppercase
+    margin-bottom: 20px
+    letter-spacing: 4px
+    svg
+      margin-left: 20px
+  .smaller
+    margin-bottom: 20px
+    a
+      color: $green
+      font-weight: 700
+  .warning-field
+    position: relative
+    border-top: 1px solid $blueGrey100
+    border-bottom: 1px solid $blueGrey100
+    svg
+      position: absolute
+      top: 20px
+      left: 0
+    p
+      font-size: 14px
+      text-transform: uppercase
+      width: 500px
+      max-width: 100%
+      padding: 20px 0 20px 40px

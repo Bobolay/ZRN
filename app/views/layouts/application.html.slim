@@ -8,6 +8,10 @@ html
   body
     = render "menu"
     = render "header"
+
+    = render "contact_popup"
+    = render "calculate_popup"
+
     .main-wrapper
       = yield
     - if @render_footer != false

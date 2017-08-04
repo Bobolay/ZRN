@@ -1,0 +1,25 @@
+.popup-wrap.contact-popup
+  
+  .close-popup-btn = inline_svg ('icons/ZRN-icons-close-v1.svg')
+
+  .inner-holder
+
+    .row
+      .columns.medium-8.medium-centered.large-6
+
+        form
+          h2 Напишіть нам
+          p.required-label * Обов'язкові поля
+          .input-field
+            input type="text" name="name"
+            label.placeholder Ваше ім'я *
+          .input-field
+            input type="text" name="email"
+            label.placeholder Електронна скринька *
+          .input-field
+            input type="text" name="phone"
+            label.placeholder Номер телефону
+          .input-field
+            textarea rows="5" placeholder="Додаткові побажання"
+          .btn-holder
+            button.btn.dark надіслати

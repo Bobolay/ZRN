@@ -103,7 +103,12 @@
     vertical-align: middle
     @media #{$medium-up}
       margin-right: 20px
-
+  &.dark
+    background: $dark
+    &:hover
+      border: 2px solid $green
+      background: $green
+      color: $dark
   &.green
     color: $dark
     border: 2px solid $dark
