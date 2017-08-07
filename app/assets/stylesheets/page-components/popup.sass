@@ -33,12 +33,13 @@
   .inner-holder
     +y-align
     width: 100%
-    padding-top: 50px
+    margin: 100px 0
 
 .calculator-wrap
   position: relative
   background: $blueGrey50
   padding: 30px
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.25)
   h2, h3
     text-transform: uppercase
     margin-bottom: 20px
@@ -64,3 +65,53 @@
       width: 500px
       max-width: 100%
       padding: 20px 0 20px 40px
+  .static-label
+    font-size: 18px
+    font-weight: 700
+    margin: 40px 0 20px
+  input[type="radio"]
+    display: none
+    & + label
+      cursor: pointer
+    &:checked + label
+      .radio-label
+        p
+          color: $green
+  .radio-label
+    position: relative
+    border: 2px solid $blueGrey200
+    svg
+      position: absolute
+      top: 0
+      left: 0
+      margin: 20px
+    p
+      margin-left: 62px
+      border-left: 2px solid $blueGrey200
+      color: $blueGrey300
+      padding: 20px 0
+      font-weight: 700
+      text-align: center
+      letter-spacing: 1px
+
+  .nice-select
+    margin-bottom: 30px
+    height: 64px
+    line-height: 64px
+
+  .btn
+    display: block
+    text-align: center
+
+.details-info
+  margin-top: 20px
+  text-align: center
+  p
+    font-size: 13px
+    color: $blueGrey300
+    font-style: italic
+    a
+      font-style: normal
+      color: black
+      font-weight: 700
+      letter-spacing: 2px
