@@ -6,7 +6,7 @@
     .close-menu
       = inline_svg ('icons/ZRN-icons-close-v1.svg')
 
-  a href=resh_nastyl_path Решітковий настил
+  a href=resh_nastyl_path = t("header.nav.resh_nastyl_title")
 
   ul
     li
@@ -24,21 +24,17 @@
     li
       a Решітковий настил “serrated”
 
-  a href=shodovi_marshi_path
-    | Сходові марші
-  a href=installation_path
-    | Монтаж
-  a href=technical_guide_path
-    | Технічний довідник
-  a
-    | Калькулятор
+  a href=shodovi_marshi_path = t("header.nav.shodovi_marshi_title")
+  a href=installation_path = t("header.nav.installation_title")
+  a href=technical_guide_path = t("header.nav.technical_guide_title")
+  a.calculate-btn = t("calculator_btn")
 
   ul
     li
-      a href=root_path Про нас
+      a href=about_path title=I18n.t("header.top_nav.about_html_title") = t("header.top_nav.about_title")
     li
-      a Статті
+      a href=blog_path title=I18n.t("header.top_nav.blog_html_title") = t("header.top_nav.blog_title")
     li
-      a Новини
+      a href=news_path title=I18n.t("header.top_nav.news_html_title") = t("header.top_nav.news_title")
     li
-      a Контакти
+      a href=contacts_path title=I18n.t("header.top_nav.contacts_html_title") = t("header.top_nav.contacts_title")

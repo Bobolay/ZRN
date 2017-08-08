@@ -1,0 +1,39 @@
+en:
+  components:
+    logo_html_title: "Повернутись на головну"
+    call_us: "тел:"
+    call_us_html_title: "Передзвонити нам"
+    social_html_title: "Ми в соцмережі"
+  header:
+    locale_btn_title: "Перемкнути мову"
+    top_nav:
+      about_title: "про нас"
+      about_html_title: "Дізнайтесь про нас більше"
+      blog_title: "статті"
+      blog_html_title: "Наші статті"
+      news_title: "новини"
+      news_html_title: "Цікаві новини"
+      contacts_title: "контакти"
+      contacts_html_title: "Як з нами зконтактувати"
+    nav:
+      resh_nastyl_title: "решітковий настил"
+      resh_nastyl_html_title: "Дізнатись все про решітковий настил"
+      shodovi_marshi_title: "сходові марші"
+      shodovi_marshi_html_title: "Дізнатись все про сходові марші"
+      installation_title: "монтаж"
+      installation_html_title: "Правильний монтаж нашої продукції"
+      technical_guide_title: "технічний довідник"
+      technical_guide_html_title: "Технічні параметри на нашу продукцію в деталях"
+    category:
+      examples_of_use: "приклади застосування"
+  footer:
+    intro: "Eдине підприємство в Україні, що займається виробництвом виключно решіткового настилу. Оскільки, на відміну від конкурентів, це наш єдиний напрямок діяльності, можемо сміливо твердити: про решітковий настил ми знаємо все!"
+    developed_by: "Розроблено"
+    developer_html_title: "Замовити крутий сайт в розробника"
+    developer_title: "Студія «Миколи Вороніна»"
+    rights_reserved: "© 2014-2017 «Завод решіткового настилу», Всі права захищені."
+    titles:
+      title_1: "ми пропонуємо"
+      title_2: "дивіться також"
+      title_3: "ми в соціальних мережах"
+  technical_quide_btn: "технічний довідник"

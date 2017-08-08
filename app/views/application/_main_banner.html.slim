@@ -1,10 +1,9 @@
 .main-banner-wrap
 
-  / .img-bg style="background-image: url(#{asset_path('photo/slider-1.jpg')})"
-  .img-bg style="background-color: black"
+  .img-bg style="background-image: url(#{asset_path('photo/mainbanner.jpg')})"
 
-  .read-more title="Гортати сторінку вниз"
-    span більше
+  .read-more title=I18n.t("mainpage.banner.read_more_html_title")
+    span = t("mainpage.banner.read_more")
 
   .inner-text
     .row
@@ -12,11 +11,10 @@
 
         .corporate-label
           .abbreviation
-            p zrn
+            p = t("mainpage.banner.corporate-label.abbreviation")
           .full-name
-            p Завод решіткового настилу
+            p = t("mainpage.banner.corporate-label.full-name")
 
-        p.regular Eдине підприємство в Україні, що займається виробництвом виключно решіткового настилу. Оскільки, на відміну від конкурентів, це наш єдиний напрямок діяльності, можемо сміливо твердити:
-        p.bold Про решітковий настил ми знаємо все!
-        a.btn title="Дізнайтесь про нас більше" href=about_path
-          | про нас
+        p.regular = t("mainpage.banner.intro")
+        a.btn title=I18n.t("mainpage.banner.btn_html_title") href=about_path
+          = t("mainpage.banner.btn_title")

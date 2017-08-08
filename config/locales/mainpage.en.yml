@@ -1,0 +1,28 @@
+en:
+  mainpage:
+    banner:
+      read_more: "більше"
+      read_more_html_title: "Гортати сторінку вниз"
+      corporate-label:
+        abbreviation: "zrn"
+        full-name: "Завод решіткового настилу"
+      intro: "Eдине підприємство в Україні, що займається виробництвом виключно решіткового настилу. Оскільки, на відміну від конкурентів, це наш єдиний напрямок діяльності, можемо сміливо твердити:
+        p.bold Про решітковий настил ми знаємо все!"
+      btn_title: "про нас"
+      btn_html_title: "Дізнайтесь про нас більше"
+    section_titles:
+      title_1: "ми пропонуємо"
+      title_2: "медіа"
+    products_html_title: "Детальніше про продукцію"
+    products_details: "детальніше"
+    products:
+      resh_nastyl_title: "Решітковий настил"
+      shodovi_marshi_title: "Сходові марші"
+      installation_title: "Монтаж"
+    media:
+      blog_title: "статті"
+      blog_btn: "всі статті"
+      read_article_btn: "детальніше"
+      read_article_btn_html_title: "Переглянути статтю повністю"
+      news_title: "новини"
+      news_btn: "всі новини"

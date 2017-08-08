@@ -2,29 +2,30 @@ nav.topnav
 
   .top.clearfix
     p.small.floated
-      | тел:
-      a href="tel:+380971780837" title="Передзвонити нам" +38 (097) 178 08 37
+      = t("components.call_us")
+      a href="tel:+380971780837" title=I18n.t("components.call_us_html_title") +38 (097) 178 08 37
     .floated-right.clearfix
       ul.floated
         li
-          a href=about_path title="Дізнайтесь про нас більше" про нас
+          a href=about_path title=I18n.t("header.top_nav.about_html_title") = t("header.top_nav.about_title")
         li
-          a href=blog_path title="Наші статті" статті
+          a href=blog_path title=I18n.t("header.top_nav.blog_html_title") = t("header.top_nav.blog_title")
         li
-          a href=news_path title="Цікаві новини" новини
+          a href=news_path title=I18n.t("header.top_nav.news_html_title") = t("header.top_nav.news_title")
         li
-          a href=contacts_path title="Як з нами зконтактувати" контакти
+          a href=contacts_path title=I18n.t("header.top_nav.contacts_html_title") = t("header.top_nav.contacts_title")
       .toggle-language.floated
-        p.smalelr title="Перемкнути мову" en
+        p title=I18n.t("header.locale_btn_title")
+          | en
 
   .main
-    a.logo-container title="Повернутись на головну" href=root_path
+    a.logo-container title=I18n.t("components.logo_html_title") href=root_path
       = inline_svg ('icons/ZRN-logo-v1.svg')
       = inline_svg ('icons/logo-mobile.svg')
     .menu-container
       ul
         li
-          a href=resh_nastyl_path title="Дізнатись все про решітковий настил" решітковий настил
+          a href=resh_nastyl_path title=I18n.t("header.nav.resh_nastyl_html_title") = t("header.nav.resh_nastyl_title")
           ul
             li
               a href=resh_nastyl_one_path Зварний решітковий настил
@@ -33,7 +34,7 @@ nav.topnav
                   a href=examples_path
                     .img-container
                       .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
-                    p приклади застосування
+                    p = t("header.category.examples_of_use")
                     = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
             li
               a Пресований решітковий настил
@@ -42,7 +43,7 @@ nav.topnav
                   a href=examples_path
                     .img-container
                       .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
-                    p приклади застосування
+                    p = t("header.category.examples_of_use")
                     = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
             li
               a Сходи
@@ -51,7 +52,7 @@ nav.topnav
                   a href=examples_path
                     .img-container
                       .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
-                    p приклади застосування
+                    p = t("header.category.examples_of_use")
                     = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
             li
               a Кріплення
@@ -60,7 +61,7 @@ nav.topnav
                   a href=examples_path
                     .img-container
                       .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
-                    p приклади застосування
+                    p = t("header.category.examples_of_use")
                     = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
             li
               a Просічно-витяжний лист
@@ -69,7 +70,7 @@ nav.topnav
                   a href=examples_path
                     .img-container
                       .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
-                    p приклади застосування
+                    p = t("header.category.examples_of_use")
                     = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
             li 
               a Розробка КМФ
@@ -78,7 +79,7 @@ nav.topnav
                   a href=examples_path
                     .img-container
                       .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
-                    p приклади застосування
+                    p = t("header.category.examples_of_use")
                     = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
             li
               a Решітковий настил “Serrated”
@@ -87,18 +88,18 @@ nav.topnav
                   a href=examples_path
                     .img-container
                       .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
-                    p приклади застосування
+                    p = t("header.category.examples_of_use")
                     = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
         li
-          a href=shodovi_marshi_path title="Дізнатись все про сходові марші" сходові марші
+          a href=shodovi_marshi_path title=I18n.t("header.nav.shodovi_marshi_html_title") = t("header.nav.shodovi_marshi_title")
         li
-          a href=installation_path title="Правильний монтаж нашої продукції" монтаж
+          a href=installation_path title=I18n.t("header.nav.installation_html_title") = t("header.nav.installation_title")
         li
-          a href=technical_guide_path title="Технічні параметри про нашу продукцію в деталях" технічний довідник
+          a href=technical_guide_path title=I18n.t("header.nav.technical_guide_html_title") = t("header.nav.technical_guide_title")
         li
-          .calculate-btn.dark title="Скористайтесь калькулятором та розрахуйте вартість нашої продукції та послуг"
+          .calculate-btn.dark title=I18n.t("calculator_html_title")
             span
               = inline_svg ('icons/ZRN-icons-calc-v1.svg')
-            p калькулятор
+            p = t("calculator_btn")
 
     .menu-btn = inline_svg ('icons/ZRN-icon-manu-v1.svg')

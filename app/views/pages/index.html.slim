@@ -3,14 +3,14 @@
 .section-indent
   .row
     .columns.preview-wrap
-      .section-title.centered ми пропонуємо
+      .section-title.centered = t("mainpage.section_titles.title_1")
 
       .preview-block
-        a.img-holder title="Детальніше про продукцію"
+        a.img-holder title=I18n.t("mainpage.products_html_title")
           .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
         .description
-          a.label title="Детальніше про продукцію"
-            | Решітковий настил
+          a.label title=I18n.t("mainpage.products_html_title")
+            = t("mainpage.products.resh_nastyl_title")
           .inner-text
             p ЗРН є єдиним на сьогоднішній день виробником зварного гратчастого настилу на території України, а також єдиним у СНД виробником настілаполного циклу.
             ul
@@ -28,28 +28,28 @@
                 a Розробка КМФ
               li
                 a Решітковий настил “Serrated”
-          a.details-btn title="Детальніше про продукцію"
-            p.small детальніше
+          a.details-btn title=I18n.t("mainpage.products_html_title")
+            p.small = t("mainpage.products_details")
             .square = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
       
       .preview-block
         a.img-holder title="Детальніше про продукцію"
           .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
         .description
-          a.label title="Детальніше про продукцію"
-            | Сходові марші
+          a.label title=I18n.t("mainpage.products_html_title")
+            = t("mainpage.products.shodovi_marshi_title")
           .inner-text
             p Сходовий марш – одна з найбільш затребуваних різновидів залізобетонних виробів в сучасному будівництві. Призначені сходові марші для створення всіляких сходів в будівлях будь-якого типу – це і житлові будинки, і офіси, і промислові будівлі. Маршові сходи, для яких використовується даний продукт виробництва, як і раніше справедливо вважаються найнадійнішими і міцними.
-          a.details-btn title="Детальніше про продукцію"
-            p.small детальніше
+          a.details-btn title=I18n.t("mainpage.products_html_title")
+            p.small = t("mainpage.products_details")
             .square = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
 
       .row
         .columns.medium-7.large-8
-          a.preview-block.fixed-height title="Детальніше про продукцію"
+          a.preview-block.fixed-height title=I18n.t("mainpage.products_html_title")
             .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
             .label
-              | Монтаж
+              = t("mainpage.products.installation_title")
         .columns.medium-5.large-3
           .technical-quide.fixed
             .main-icon = inline_svg ('icons/ZRN-icon-techbook-v1.svg')
@@ -86,16 +86,16 @@
                     | каталог
                   .size
                     | (3.4 мб)
-            .technical-quide-btn технічний довідник
+            .technical-quide-btn = t("technical_quide_btn")
 
 .row
   .columns
-    .section-title.centered медіа
+    .section-title.centered = t("mainpage.section_titles.title_2")
 
 .media-wrap.clearfix
   .floated
-    p.label статті
-    a.see-all-link href=blog_path всі статті
+    p.label = t("mainpage.media.blog_title")
+    a.see-all-link href=blog_path = t("mainpage.media.blog_btn")
     .slider-container
       ul.articles-slider
         li
@@ -110,19 +110,22 @@
           | 12 липня, 2017
           span корисні поради
         p.title Переваги гарячого цинкування кріплень для решіткового настилу кріплень для решіткового настилу
-        a.green-link href=blog_one_path title="Переглянути статтю повністю" детальніше
+        a.green-link href=blog_one_path title=I18n.t("mainpage.media.read_article_btn_html_title")
+          = t("mainpage.media.read_article_btn")
       .slide-description
         p.date
           | 12 липня, 2017
           span корисні поради
         p.title Переваги гарячого цинкування кріплень для решіткового настилу
-        a.green-link href=blog_one_path title="Переглянути статтю повністю" детальніше
+        a.green-link href=blog_one_path title=I18n.t("mainpage.media.read_article_btn_html_title")
+          = t("mainpage.media.read_article_btn")
       .slide-description
         p.date
           | 12 липня, 2017
           span корисні поради
         p.title Переваги гарячого цинкування кріплень для решіткового настилу
-        a.green-link href=blog_one_path title="Переглянути статтю повністю" детальніше
+        a.green-link href=blog_one_path title=I18n.t("mainpage.media.read_article_btn_html_title")
+          = t("mainpage.media.read_article_btn")
       .slider-controls.for-articles
         .slide-prev
           = inline_svg ('icons/ZRN-icons-arrow-left-v1.svg')
@@ -130,8 +133,8 @@
           = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
   .floated
     .inner
-      p.label новини
-      a.see-all-link href=news_path всі новини
+      p.label = t("mainpage.media.news_title")
+      a.see-all-link href=news_path = t("mainpage.media.news_btn")
       ul.news-list
         li
           a href=new_one_path title="Прочитати новину"
