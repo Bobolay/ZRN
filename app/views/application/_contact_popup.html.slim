@@ -8,18 +8,18 @@
       .columns.medium-8.medium-centered.large-6
 
         form
-          h2 Напишіть нам
-          p.required-label * Обов'язкові поля
+          h2 = t("form.title")
+          p.required-label = t("form.required_label")
           .input-field
             input type="text" name="name"
-            label.placeholder Ваше ім'я *
+            label.placeholder = t("form.input_field_1")
           .input-field
             input type="text" name="email"
-            label.placeholder Електронна скринька *
+            label.placeholder = t("form.input_field_2")
           .input-field
             input type="text" name="phone"
-            label.placeholder Номер телефону
+            label.placeholder = t("form.input_field_3")
           .input-field
-            textarea rows="5" placeholder="Додаткові побажання"
+            textarea rows="5" placeholder=I18n.t("form.input_field_4")
           .btn-holder
-            button.btn.dark надіслати
+            button.btn.dark = t("form.btn")

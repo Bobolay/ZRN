@@ -4,8 +4,8 @@
 
   .inner
     = inline_svg ('icons/ZRN-icons-logohren-v1.svg')
-    p.banner-title технічний довідник
-    p.banner-subtitle інформація для професіоналів
+    p.banner-title = t("products.technical-quide.title")
+    p.banner-subtitle = t("products.technical-quide.subtitle")
 
 .technical-quide-wrap
 
@@ -13,7 +13,7 @@
     .columns.medium-9.large-10
 
       .article-content
-        h2 Розділи довідника
+        h2 = t("products.technical-quide.handbook_section")
 
       ol.technical-quide-list
         li
@@ -48,7 +48,7 @@
             | решітки з зубами протиковазання
 
     .columns.medium-3.large-2
-      p.files-to-download файли для завантаження
+      p.files-to-download = t("components.files_to_download")
       .technical-quide
         .squared-download-links.clearfix
           a.floated

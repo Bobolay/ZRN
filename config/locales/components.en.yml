@@ -1,9 +1,16 @@
 en:
   components:
     logo_html_title: "Повернутись на головну"
+    go_to_mainpage: "повернутись на головну"
     call_us: "тел:"
     call_us_html_title: "Передзвонити нам"
     social_html_title: "Ми в соцмережі"
+    details_btn: "детальніше"
+    download_more_btn: "підвантажити більше"
+    tag_categories: "категорії:"
+    filter_years: "по рокам"
+    loading_table_btn: "Таблиця навантажень"
+    files_to_download: "файли для завантаження"
   header:
     locale_btn_title: "Перемкнути мову"
     top_nav:
@@ -37,3 +44,14 @@ en:
       title_2: "дивіться також"
       title_3: "ми в соціальних мережах"
   technical_quide_btn: "технічний довідник"
+  remarks:
+    slogan: "наш девіз"
+    next_new: "наш девіз"
+    what_we_do: "що ми зробили"
+    examples_of_use: "приклади використання"
+    see_also: "Дивіться також"
+    our_products: "Наша продукція"
+    next_section: "наступний розділ"
+  not_found:
+    main_text: "На жаль сторінку не знайдено"
+  terms_of_use: "правила користування сайтом"

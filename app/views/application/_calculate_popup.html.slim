@@ -9,15 +9,13 @@
 
         .calculator-wrap
           h2
-            | калькулятор
+            = t("calculator.title")
             = inline_svg ('icons/pidkazka.svg')
-          p.smaller
-            | Вказаний калькулятор дозволяє вирахувати теоретичну вагу решіткового настилу та навантаження (розподілене і зосереджене), яке вказаний настил здатний сприймати. Всі розрахунки відповідають таблицям навантажень решіткового настилу, які Ви можете знайти на сайті та в каталозі 
-            a “Решітковий настил”
+          = raw t("calculator.explanation")
           .warning-field
             = inline_svg ('icons/warning.svg')
-            p Зверніть увагу, що тип антикорозійного захисту впливає на вагу решіткового настилу.
-          p.static-label Виберіть тип решітки
+            p = t("calculator.attention")
+          p.static-label = t("calculator.static_label_1")
           .row
             .columns.medium-6
               input#zvarna type="radio" name="grilltype"
@@ -31,47 +29,47 @@
                 .radio-label
                   = inline_svg ('icons/radio-presovana.svg')
                   p Пресована
-          p.static-label Введіть розрахункові дані
+          p.static-label = t("calculator.static_label_2")
           .row
             .columns.medium-6
               select
-                option value="all" Товщина несучої стіни
+                option value="all" = t("calculator.input_label_1")
                 option value="1" 1
                 option value="2" 2
                 option value="3" 3
                 option value="4" 4
             .columns.medium-6
               select
-                option value="all" Висота несучої стіни
+                option value="all" = t("calculator.input_label_2")
                 option value="1" 2017
                 option value="2" 2016
                 option value="3" 2015
                 option value="4" 2014
             .columns.medium-6
               select
-                option value="all" Крок несучих смуг
+                option value="all" = t("calculator.input_label_3")
                 option value="1" 2017
                 option value="2" 2016
                 option value="3" 2015
                 option value="4" 2014
             .columns.medium-6
               select
-                option value="all" Крок поперечного прутка
+                option value="all" = t("calculator.input_label_4")
                 option value="1" 2017
                 option value="2" 2016
                 option value="3" 2015
                 option value="4" 2014
             .columns.medium-6
               select
-                option value="all" Антикорозійний захист
+                option value="all" = t("calculator.input_label_5")
                 option value="1" 2017
                 option value="2" 2016
                 option value="3" 2015
                 option value="4" 2014
             .columns.medium-6
-              .btn.dark порахувати
+              .btn.dark = t("calculator.calculate")
 
         .details-info
           p
-            | Якщо у Вас виникли запитання, або за більш детальним розрахунком, звертайтесь у наш інженерний центр за телефоном:
+            = t("additional_details")
             a +380 (22) 35-44-64

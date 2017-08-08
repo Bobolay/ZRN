@@ -6,7 +6,7 @@
     .columns
 
       .tag-container
-        span категорії:
+        span = t("components.tag_categories")
         ul
           li.tag.active всі
           li.tag data-tag-id="1" кращі практики
@@ -24,7 +24,7 @@
             span корисні поради
           p.title Переваги гарячого цинкування кріплень для решіткового настилу
           a.details-btn href=blog_one_path title="Прочитати статтю"
-            p.small детальніше
+            p.small = t("components.details_btn")
             .square = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
 
     .columns.medium-4
@@ -37,7 +37,7 @@
             span корисні поради
           p.title Цинкування кріплень для решіткового настилу цинкування кріплень для решіткового настилу
           a.details-btn href=blog_one_path title="Прочитати статтю"
-            p.small детальніше
+            p.small = t("components.details_btn")
             .square = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
 
     .columns.medium-4
@@ -50,7 +50,7 @@
             span корисні поради
           p.title Гарячого цинкування кріплень для решіткового настилу
           a.details-btn href=blog_one_path title="Прочитати статтю"
-            p.small детальніше
+            p.small = t("components.details_btn")
             .square = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
 
     .columns.medium-4
@@ -63,7 +63,7 @@
             span корисні поради
           p.title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim autem aspernatur quae dolore id nulla, nobis voluptatum quam velit expedita.
           a.details-btn href=blog_one_path title="Прочитати статтю"
-            p.small детальніше
+            p.small = t("components.details_btn")
             .square = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
 
     .columns.medium-4
@@ -76,8 +76,8 @@
             span корисні поради
           p.title Cupiditate architecto quibusdam at consectetur vitae quis quod nemo ad dolorem sed exercitationem voluptatibus facilis similique quisquam quaerat alias labore, velit nihil.
           a.details-btn href=blog_one_path title="Прочитати статтю"
-            p.small детальніше
+            p.small = t("components.details_btn")
             .square = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
 
   .btn-holder
-    .show-more-btn підвантажити більше
+    .show-more-btn = t("components.download_more_btn")

@@ -1,2 +1,9 @@
 en:
   form:
+    title: "Напишіть нам"
+    required_label: "* Обов'язкові поля"
+    input_field_1: "Ваше ім'я *"
+    input_field_2: "Електронна скринька *"
+    input_field_3: "Номер телефону"
+    input_field_4: "Додаткові побажання"
+    btn: "надіслати"

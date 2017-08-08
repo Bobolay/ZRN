@@ -7,30 +7,30 @@
   .row
     .columns.large-5
 
-      p.title контакти
-      p.subtitle Будьте з нами на зв'язку
+      p.title = t("contacts.maintitle")
+      p.subtitle = t("contacts.subtitle")
 
       ul
         li
-          p.small Адреса заводу
+          p.small = t("contacts.contact_blocks.block_1")
           p.larger вул. Промислова 7/А, м. Стрий,  Львівська обл., Україна, 82400
 
         li
-          p.small Бухгалтерія
+          p.small = t("contacts.contact_blocks.block_2")
           a.larger href="tel:+380936878002" title="Подзвонити нам" +38 093 687 80 02
           a.email href="mailto:buh@zrn.com.ua" title="" buh@zrn.com.ua
         li
-          p.small Інженерний відділ
+          p.small = t("contacts.contact_blocks.block_3")
           a.larger +38 093 687 80 02
           a.larger +38 097 687 80 02
           a.email buh@zrn.com.ua
         li
-          p.small Відділ збуту
+          p.small = t("contacts.contact_blocks.block_4")
           a.larger +38 032 179 55 11
           a.larger +38 097 687 80 02
           a.larger +38 093 687 80 02
           a.email buh@zrn.com.ua
       
       .btn-mobile-align
-        .btn.contact-btn зв'язатись з нами
-        .green-link переглянути вакансії
+        .btn.contact-btn = t("contacts.contact_btn")
+        .green-link = t("contacts.watch_out_vacancies")

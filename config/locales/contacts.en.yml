@@ -1,0 +1,11 @@
+en:
+  contacts:
+    maintitle: "контакти"
+    subtitle: "Будьте з нами на зв'язку"
+    contact_blocks:
+      block_1: "Адреса заводу"
+      block_2: "Бухгалтерія"
+      block_3: "Інженерний відділ"
+      block_4: "Відділ збуту"
+    contact_btn: "зв'язатись з нами"
+    watch_out_vacancies: "переглянути вакансії"

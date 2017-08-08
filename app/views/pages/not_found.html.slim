@@ -11,7 +11,7 @@
           .abbreviation
             p 404
           .full-name
-            p На жаль сторінку не знайдено
+            p = t("not_found.main_text")
 
-        a.btn title="Повернутись на головну" href=root_path
-          | повернутись на головну
+        a.btn title=I18n.t("components.logo_html_title") href=root_path
+          = t("components.go_to_mainpage")

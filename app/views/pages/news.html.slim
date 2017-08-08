@@ -7,7 +7,7 @@
 
       .clearfix
         .floated-right.filter-years
-          p по рокам:
+          p = t("components.filter_years")
           select.green
             option value="all" Всі роки
             option value="2017" 2017
@@ -17,28 +17,28 @@
       
       ul.news-list
         li data-attr="2017"
-          a href=new_one_path title="Прочитати новину"
+          a href=new_one_path title=I18n.t("mainpage.media.read_new_html_title")
             .img-holder
               .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
             p.date 12 липня, 2017
             p.title Виробництво металоконструкцій ЧЗМК сертифіковане згідно EN 1090 ! металоконструкцій ЧЗМК
             p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex blanditiis, delectus eum quaerat in iste amet facilis nihil eveniet et, labore aspernatur distinctio, debitis quidem vitae natus neque obcaecati deserunt. Ex blanditiis, delectus eum quaerat in iste amet facilis nihil eveniet et, labore aspernatur distinctio, debitis quidem vitae natus neque obcaecati deserunt.
         li data-attr="2016"
-          a href=new_one_path title="Прочитати новину"
+          a href=new_one_path title=I18n.t("mainpage.media.read_new_html_title")
             .img-holder
               .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
             p.date 15 липня, 2016
             p.title ЧЗМК сертифіковане металоконструкцій ЧЗМК
             p.description Blanditiis, delectus eum quaerat in iste amet facilis nihil eveniet et, labore aspernatur distinctio, debitis quidem vitae natus neque obcaecati deserunt. Ex blanditiis, delectus eum quaerat in iste amet facilis nihil eveniet et, labore aspernatur distinctio, debitis quidem vitae natus neque obcaecati deserunt.
         li data-attr="2015"
-          a href=new_one_path title="Прочитати новину"
+          a href=new_one_path title=I18n.t("mainpage.media.read_new_html_title")
             .img-holder
               .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
             p.date 21 липня, 2015
             p.title Vеталоконструкцій ЧЗМК сертифіковане згідно EN 1090 ! металоконструкцій ЧЗМК
             p.description Ex blanditiis, delectus eum quaerat in iste amet facilis nihil eveniet et, labore aspernatur distinctio, debitis quidem vitae natus neque obcaecati deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex blanditiis, delectus eum quaerat in iste amet facilis nihil eveniet et, labore aspernatur distinctio, debitis quidem vitae natus neque obcaecati deserunt.
         li data-attr="2014"
-          a href=new_one_path title="Прочитати новину"
+          a href=new_one_path title=I18n.t("mainpage.media.read_new_html_title")
             .img-holder
               .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
             p.date 21 липня, 2014
@@ -46,4 +46,4 @@
             p.description Ex blanditiis, delectus eum quaerat in iste amet facilis nihil eveniet et, labore aspernatur distinctio, debitis quidem vitae natus neque obcaecati deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex blanditiis, delectus eum quaerat in iste amet facilis nihil eveniet et, labore aspernatur distinctio, debitis quidem vitae natus neque obcaecati deserunt.
 
   .btn-holder
-    .show-more-btn підвантажити більше
+    .show-more-btn = t("components.download_more_btn")

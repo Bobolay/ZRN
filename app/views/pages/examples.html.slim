@@ -4,8 +4,8 @@
 
   .inner
     = inline_svg ('icons/ZRN-icons-logohren-v1.svg')
-    p.banner-title Приклади використання
-    p.banner-subtitle Як виглядають наші продуктив реальному житті
+    p.banner-title = t("products.examples_of_use")
+    p.banner-subtitle = t("products.how_product_looks_like")
 
 .bottom-indent
 
@@ -13,7 +13,7 @@
     .columns
 
       .tag-container
-        span категорії:
+        span = t("components.tag_categories")
         ul
           li.tag.active всі
           li.tag data-tag-id="1" промисловість
@@ -113,4 +113,4 @@
             | фотографій
 
   .btn-holder
-    .show-more-btn підвантажити більше
+    .show-more-btn = t("components.download_more_btn")
