@@ -87,7 +87,9 @@
     svg
       margin-left: 20px
   .inner-padding
-    padding: 30px
+    padding: 40px
+    @media #{$small-only}
+      padding: 40px 20px
   .smaller
     margin-bottom: 20px
     a
@@ -160,6 +162,8 @@
     position: relative
     background: $dark
     padding: 40px
+    @media #{$small-only}
+      padding: 40px 20px
     .larger, .small
       color: $green
     .small
@@ -182,6 +186,7 @@
     table
       margin: 50px 0
       td, th
+        padding: 10px 0
         border: 0
         border-bottom: 1px dotted $blueGrey700
         color: white
