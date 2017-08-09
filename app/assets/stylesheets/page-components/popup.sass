@@ -8,8 +8,7 @@
   display: none
   z-index: 12
   &.opened
-    display: block
-  
+    display: block  
 
   .close-popup-btn
     +x-align
@@ -19,7 +18,7 @@
     background: $green
     +transition(.25s)
     cursor: pointer
-    z-index: 1
+    z-index: 2
     svg
       +centered-inside
       +transition(.25s)
@@ -31,9 +30,49 @@
         fill: $green
 
   .inner-holder
-    +y-align
-    width: 100%
-    margin: 100px 0
+    position: relative
+    @media #{$small-only}
+      margin-top: 100px
+    @media #{$medium-up}
+      top: 50%
+      +translate(0,-50%)
+
+  .confirm-container
+    +fullsize
+    background: white
+    opacity: 0
+    pointer-events: none
+    +transition(.5s)
+    .inner-text
+      +centered-inside
+      width: 500px
+      height: 400px
+      max-width: 90%
+      text-align: center
+      @media #{$small-only}
+        height: 300px
+    .title
+      font-family: 'Segoe'
+      font-size: 48px
+      color: black
+      line-height: 1
+      margin-bottom: 30px
+      @media #{$small-only}
+        font-size: 24px
+    .subtitle
+      font-size: 24px
+      color: black
+      margin-bottom: 60px
+      @media #{$small-only}
+        font-size: 18px
+        margin-bottom: 40px
+
+  &.success
+    overflow: initial
+    .confirm-container
+      opacity: 1
+      pointer-events: initial
+
 
 .calculator-wrap
   position: relative
