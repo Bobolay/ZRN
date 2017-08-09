@@ -29,7 +29,6 @@
 #= require header
 #= require menu_and_popups
 #= require accordion
-#= require popups
 #= require tabs
 #= require scroll-nav-initialize
 #= require filter-tag
@@ -37,3 +36,4 @@
 #= require sticky-side-block
 #= require lightgallery-initialize
 #= require form
+#= require input-file-add

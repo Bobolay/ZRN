@@ -23,6 +23,10 @@ $document.on 'click', '.calculate-btn', ->
   $('.calculate-popup').addClass('opened')
   body.addClass('hidden')
 
+$document.on 'click', '.vacancies-btn', ->
+  $('.vacancie-popup').addClass('opened')
+  body.addClass('hidden')
+
 #     C L O S E     P O P U P S
 
 $document.on 'click', '.close-popup-btn', ->

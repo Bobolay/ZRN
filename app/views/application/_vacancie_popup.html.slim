@@ -1,0 +1,56 @@
+.popup-wrap.vacancie-popup
+  
+  .close-popup-btn = inline_svg ('icons/ZRN-icons-close-v1.svg')
+
+  .inner-holder
+
+    .row
+      .columns.medium-8.medium-centered.large-6
+        p.vacancie-title інженер-будівельник, конструктор, проектант
+        p.price від 6500 грн
+        .article-content
+          h2 Вимоги
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum porro recusandae quae itaque suscipit nam quisquam, perferendis maxime. Necessitatibus quaerat voluptatem ab amet impedit ut, expedita voluptas consequuntur recusandae, explicabo.
+          ul
+            li qwert фівфівфів
+            li asdfg ячячсячсяч
+            li zxcvb іваіва
+          h2 Обов'язки
+          p Necessitatibus quaerat voluptatem ab amet impedit ut, expedita voluptas consequuntur recusandae, explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat vero cupiditate, deleniti omnis iure accusamus doloribus, ipsam cum dolores voluptate laboriosam quibusdam! Eaque incidunt, tempora! Natus magni, temporibus quaerat laudantium.
+          ul
+            li qwert
+            li asdfg
+            li zxcvb
+    .row
+      .columns.medium-7.medium-centered.large-5
+
+        form
+          h2 = t("form.title_2")
+          p.required-label = t("form.required_label")
+          .input-field
+            input type="text" name="name"
+            label.placeholder = t("form.input_field_1")
+          .input-field
+            input type="text" name="email"
+            label.placeholder = t("form.input_field_2")
+          .input-field
+            input type="text" name="phone"
+            label.placeholder = t("form.input_field_3")
+          .input-field
+            textarea rows="5" placeholder=I18n.t("form.input_field_5")
+          .btn-holder
+
+            .attach-file
+              label.btn.attach-file-btn for="vacancy_request__attachment"
+                | + Прикріпити резюме
+                input#vacancy_request__attachment type="file" name="vacancy_request[attachment]"
+              .added-file-field
+              .remove-file = inline_svg "icons/ZRN-icons-close-v1.svg"
+
+            button.btn.dark = t("form.btn")
+
+  .confirm-container
+    .inner-text
+      p.title = t("success.title")
+      p.subtitle = t("success.subtitle")
+      a.btn.dark href=root_path = t("components.go_to_mainpage")
