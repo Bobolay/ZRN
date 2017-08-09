@@ -26,6 +26,6 @@
 
   .confirm-container
     .inner-text
-      p.title Ваше повідомлення успішно надіслане
-      p.subtitle Дякуюємо, найближчим часом оператор зв’яжеться з вами
+      p.title = t("success.title")
+      p.subtitle = t("success.subtitle")
       a.btn.dark href=root_path = t("components.go_to_mainpage")

@@ -8,66 +8,93 @@
       .columns.medium-9.medium-centered.large-7
 
         .calculator-wrap
-          h2
-            = t("calculator.title")
-            = inline_svg ('icons/pidkazka.svg')
-          = raw t("calculator.explanation")
-          .warning-field
-            = inline_svg ('icons/warning.svg')
-            p = t("calculator.attention")
-          p.static-label = t("calculator.static_label_1")
-          .row
-            .columns.medium-6
-              input#zvarna type="radio" name="grilltype"
-              label for="zvarna"
-                .radio-label
-                  = inline_svg ('icons/radio-zvarna.svg')
-                  p Зварна
-            .columns.medium-6
-              input#presovana type="radio" name="grilltype"
-              label for="presovana"
-                .radio-label
-                  = inline_svg ('icons/radio-presovana.svg')
-                  p Пресована
-          p.static-label = t("calculator.static_label_2")
-          .row
-            .columns.medium-6
-              select
-                option value="all" = t("calculator.input_label_1")
-                option value="1" 1
-                option value="2" 2
-                option value="3" 3
-                option value="4" 4
-            .columns.medium-6
-              select
-                option value="all" = t("calculator.input_label_2")
-                option value="1" 2017
-                option value="2" 2016
-                option value="3" 2015
-                option value="4" 2014
-            .columns.medium-6
-              select
-                option value="all" = t("calculator.input_label_3")
-                option value="1" 2017
-                option value="2" 2016
-                option value="3" 2015
-                option value="4" 2014
-            .columns.medium-6
-              select
-                option value="all" = t("calculator.input_label_4")
-                option value="1" 2017
-                option value="2" 2016
-                option value="3" 2015
-                option value="4" 2014
-            .columns.medium-6
-              select
-                option value="all" = t("calculator.input_label_5")
-                option value="1" 2017
-                option value="2" 2016
-                option value="3" 2015
-                option value="4" 2014
-            .columns.medium-6
-              .btn.dark = t("calculator.calculate")
+          .inner-padding
+            h2
+              = t("calculator.title")
+              = inline_svg ('icons/pidkazka.svg')
+            = raw t("calculator.explanation")
+            .warning-field
+              = inline_svg ('icons/warning.svg')
+              p = t("calculator.attention")
+            p.static-label = t("calculator.static_label_1")
+            .row
+              .columns.medium-6
+                input#zvarna type="radio" name="grilltype"
+                label for="zvarna"
+                  .radio-label
+                    .icon
+                      = inline_svg ('icons/radio-zvarna.svg')
+                    p Зварна
+              .columns.medium-6
+                input#presovana type="radio" name="grilltype"
+                label for="presovana"
+                  .radio-label
+                    .icon
+                      = inline_svg ('icons/radio-presovana.svg')
+                    p Пресована
+            p.static-label = t("calculator.static_label_2")
+            .row
+              .columns.medium-6
+                select
+                  option value="all" = t("calculator.input_label_1")
+                  option value="1" 1
+                  option value="2" 2
+                  option value="3" 3
+                  option value="4" 4
+              .columns.medium-6
+                select
+                  option value="all" = t("calculator.input_label_2")
+                  option value="1" 2017
+                  option value="2" 2016
+                  option value="3" 2015
+                  option value="4" 2014
+              .columns.medium-6
+                select
+                  option value="all" = t("calculator.input_label_3")
+                  option value="1" 2017
+                  option value="2" 2016
+                  option value="3" 2015
+                  option value="4" 2014
+              .columns.medium-6
+                select
+                  option value="all" = t("calculator.input_label_4")
+                  option value="1" 2017
+                  option value="2" 2016
+                  option value="3" 2015
+                  option value="4" 2014
+              .columns.medium-6
+                select
+                  option value="all" = t("calculator.input_label_5")
+                  option value="1" 2017
+                  option value="2" 2016
+                  option value="3" 2015
+                  option value="4" 2014
+              .columns.medium-6
+                .btn.dark = t("calculator.calculate")
+
+          .result-container
+            p.larger Результат обрахунку
+            table
+              tr
+                td
+                  p = t("result.result_field_1")
+                td
+                  p 1
+              tr
+                td = t("result.result_field_2")
+                td 2
+              tr
+                td = t("result.result_field_3")
+                td 3
+              tr
+                td = t("result.result_field_4")
+                td 4 
+              tr
+                td = t("result.result_field_5")
+                td 5
+            p.small
+              span = inline_svg ('icons/reset_form.svg')
+              | Очистити поля
 
         .details-info
           p

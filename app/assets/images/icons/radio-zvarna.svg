@@ -6,11 +6,11 @@
 <defs>
 </defs>
 <g>
-  <rect x="4" fill="#90A4AE" width="2" height="21"/>
-  <rect x="10" fill="#90A4AE" width="1" height="21"/>
-  <rect x="15" fill="#90A4AE" width="2" height="21"/>
-  <rect x="0" y="15" fill="#90A4AE" width="21" height="2"/>
-  <rect x="0" y="10" fill="#90A4AE" width="21" height="1"/>
-  <rect x="0" y="4" fill="#90A4AE" width="21" height="2"/>
+  <rect x="4" fill="" width="2" height="21"/>
+  <rect x="10" fill="" width="1" height="21"/>
+  <rect x="15" fill="" width="2" height="21"/>
+  <rect x="0" y="15" fill="" width="21" height="2"/>
+  <rect x="0" y="10" fill="" width="21" height="1"/>
+  <rect x="0" y="4" fill="" width="21" height="2"/>
 </g>
 </svg>

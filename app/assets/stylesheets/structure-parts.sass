@@ -70,37 +70,21 @@
   padding: 20px 40px
   border: 2px solid $green
   display: inline-block
+  vertical-align: middle
   height: 64px
   font-family: 'Segoe'
   font-size: 14px
+  color: $green
   text-transform: uppercase
   letter-spacing: 2px
   overflow: hidden
-  color: $green
   cursor: pointer
-  &:before
-    // content: ''
-    position: absolute
-    width: 200%
-    height: 200%
-    top: -50%
-    left: -50px
-    background: url(#{asset_path('icons/plus.svg')})
-    background-size: 20px
-    opacity: 0
-    +transition(.4s)
-    transform: scale(0.5) rotate(-10deg)
+  +transition(.25s)
   &:hover
     border: 2px solid white
-    background: white
-    +transition-delay(.2s)
-    &:before
-      // transform: scale(2) rotate(10deg)
-      // opacity: .3
   &.contact-btn
     color: $dark
     border: 2px solid $dark
-    vertical-align: middle
     @media #{$medium-up}
       margin-right: 20px
   &.dark
