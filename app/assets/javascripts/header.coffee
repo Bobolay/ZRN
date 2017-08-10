@@ -12,7 +12,6 @@ setClosingTimeout = ()->
   visibility_duration = 3000
   window.top_nav_timeout =  setTimeout(
     ()->
-      #alert("setClosingTimeout")
       window.top_nav_timeout = false
       if !window.top_nav_locked
 
@@ -24,7 +23,6 @@ setClosingTimeout = ()->
 handle_scroll = (e)->
   if e && e.ctrlKey
     alert("ctrl")
-  # top nav
   $banner = $(banner_selector)
   banner_height = $banner.height()
 
