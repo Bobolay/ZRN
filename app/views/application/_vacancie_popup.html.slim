@@ -43,7 +43,7 @@
             .attach-file
               label.btn.attach-file-btn for="vacancy_request__attachment"
                 = inline_svg ("icons/ZRN-icons-add-v1.svg")
-                | Прикріпити резюме
+                = t("form.attach_file")
                 input#vacancy_request__attachment type="file" name="vacancy_request[attachment]"
               .added-file-field
               .remove-file = inline_svg "icons/ZRN-icons-close-v1.svg"
