@@ -8,6 +8,9 @@
       .columns.medium-9.medium-centered.large-7
 
         .calculator-wrap
+          
+          .calc-error-message = t("calculator.error_message")
+
           .inner-padding
             h2
               = t("calculator.title")
@@ -70,9 +73,9 @@
                   option value="3" Сильний
                   option value="4" Надміцний
               .columns.medium-6
-                .btn.dark.calculate_btn = t("calculator.calculate")
+                a.btn.dark.calculate_btn href="#result" = t("calculator.calculate")
 
-          .result-container
+          .result-container#result
             p.larger Результат обрахунку
             table
               tr
