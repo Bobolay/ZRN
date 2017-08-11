@@ -27,14 +27,14 @@
                   .radio-label
                     .icon
                       = inline_svg ('icons/radio-zvarna.svg')
-                    p Зварна
+                    p = t("calculator.radio_name_1")
               .columns.medium-6
                 input#presovana type="radio" name="grilltype" value="2"
                 label for="presovana"
                   .radio-label
                     .icon
                       = inline_svg ('icons/radio-presovana.svg')
-                    p Пресована
+                    p = t("calculator.radio_name_2")
             p.static-label = t("calculator.static_label_2")
             .row
               .columns.medium-6
@@ -68,15 +68,15 @@
               .columns.medium-6
                 select name="anti_corrosion"
                   option value="all" = t("calculator.input_label_5")
-                  option value="1" Слабкий
-                  option value="2" Середній
-                  option value="3" Сильний
-                  option value="4" Надміцний
+                  option value="1" 1
+                  option value="2" 2
+                  option value="3" 3
+                  option value="4" 4
               .columns.medium-6
                 a.btn.dark.calculate_btn href="#result" = t("calculator.calculate")
 
           .result-container#result
-            p.larger Результат обрахунку
+            p.larger = t("result.title")
             table
               tr
                 td
@@ -101,7 +101,7 @@
                   p.result-5 5
             p.small.reset_calculator
               span = inline_svg ('icons/reset_form.svg')
-              | Очистити поля
+              = t("result.reset_field")
 
         .details-info
           p

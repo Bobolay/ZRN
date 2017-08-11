@@ -6,47 +6,47 @@
       .section-title.centered = t("mainpage.section_titles.title_1")
 
       .preview-block
-        a.img-holder title=I18n.t("mainpage.products_html_title")
+        a.img-holder href=resh_nastyl_path title=I18n.t("mainpage.products_html_title")
           .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
         .description
-          a.label title=I18n.t("mainpage.products_html_title")
+          a.label href=resh_nastyl_path title=I18n.t("mainpage.products_html_title")
             = t("mainpage.products.resh_nastyl_title")
           .inner-text
             p ЗРН є єдиним на сьогоднішній день виробником зварного гратчастого настилу на території України, а також єдиним у СНД виробником настілаполного циклу.
             ul
               li
-                a Зварний решітковий настил
+                a href=resh_nastyl_one_path = t("categories.category_1")
               li
-                a Пресований решітковий настил
+                a href=resh_nastyl_one_path = t("categories.category_2")
               li
-                a Сходи
+                a href=shodovi_marshi_path = t("categories.category_3")
               li
-                a Кріплення
+                a href=shodovi_marshi_path = t("categories.category_4")
               li
-                a Просічно-витяжний лист
+                a href=shodovi_marshi_path = t("categories.category_5")
               li
-                a Розробка КМФ
+                a href=shodovi_marshi_path = t("categories.category_6")
               li
-                a Решітковий настил “Serrated”
-          a.details-btn title=I18n.t("mainpage.products_html_title")
+                a href=shodovi_marshi_path = t("categories.category_7")
+          a.details-btn href=resh_nastyl_path title=I18n.t("mainpage.products_html_title")
             p.small = t("mainpage.products_details")
             .square = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
       
       .preview-block
-        a.img-holder title="Детальніше про продукцію"
+        a.img-holder href=shodovi_marshi_path title="Детальніше про продукцію"
           .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
         .description
-          a.label title=I18n.t("mainpage.products_html_title")
+          a.label href=shodovi_marshi_path title=I18n.t("mainpage.products_html_title")
             = t("mainpage.products.shodovi_marshi_title")
           .inner-text
             p Сходовий марш – одна з найбільш затребуваних різновидів залізобетонних виробів в сучасному будівництві. Призначені сходові марші для створення всіляких сходів в будівлях будь-якого типу – це і житлові будинки, і офіси, і промислові будівлі. Маршові сходи, для яких використовується даний продукт виробництва, як і раніше справедливо вважаються найнадійнішими і міцними.
-          a.details-btn title=I18n.t("mainpage.products_html_title")
+          a.details-btn href=shodovi_marshi_path title=I18n.t("mainpage.products_html_title")
             p.small = t("mainpage.products_details")
             .square = inline_svg ('icons/ZRN-icons-arrow-right-v1.svg')
 
       .row
         .columns.medium-7.large-8
-          a.preview-block.fixed-height title=I18n.t("mainpage.products_html_title")
+          a.preview-block.fixed-height href=installation_path title=I18n.t("mainpage.products_html_title")
             .img-bg style="background-image: url('http://lorempixel.com/1600/960/')"
             .label
               = t("mainpage.products.installation_title")
@@ -86,7 +86,7 @@
                     | каталог
                   .size
                     | (3.4 мб)
-            .technical-quide-btn = t("technical_quide_btn")
+            a.technical-quide-btn href=technical_guide_path = t("technical_quide_btn")
 
 .row
   .columns
