@@ -11,6 +11,7 @@ uk:
     filter_years: "по рокам"
     loading_table_btn: "Таблиця навантажень"
     files_to_download: "файли для завантаження"
+    download_pdf_btn: "Завантажити в PDF"
   header:
     locale_btn_title: "Перемкнути мову"
     top_nav:

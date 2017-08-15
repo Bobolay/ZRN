@@ -17,6 +17,7 @@
 #= require plugins/jquery.nice-select.min
 #= require plugins/jquery.validate.min
 #= require plugins/messages_uk
+#= require plugins/dragscroll
 
 #     I N I T I A L I Z E
 

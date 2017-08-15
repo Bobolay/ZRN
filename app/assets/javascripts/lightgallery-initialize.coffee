@@ -1,4 +1,4 @@
 $document.ready ->
-  $('#animated-thumbnails').lightGallery({
-    selector: '.square a'
+  $('.animated_thumbnails').lightGallery({
+    selector: '.lg_object a'
   })

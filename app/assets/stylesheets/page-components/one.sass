@@ -181,3 +181,43 @@
     @media screen and (min-width: 1920px)
       font-size: 24px
 
+.constructor-part
+  padding-bottom: 50px
+.table-holder-with-scroll
+  overflow-X: scroll
+  cursor: move
+  cursor: grab
+  cursor: -moz-grab
+  cursor: -webkit-grab
+  img
+    width: initial
+    max-width: none
+  @media #{$small-only}
+    display: none
+
+.donwload-pdf-holder
+  text-align: right
+  margin-top: 50px
+.donwload-pdf-btn
+  position: relative
+  padding: 10px 20px 10px 50px
+  background: $green
+  border: 2px solid $dark
+  color: $dark
+  svg
+    position: absolute
+    width: 20px
+    height: 20px
+    top: 16px
+    left: 20px
+  p
+    margin-bottom: 0
+    line-height: 1.2
+  .name
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: 700
+  &:hover
+    background: white
+.table-holder
+  overflow: scroll

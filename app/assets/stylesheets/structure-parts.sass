@@ -415,6 +415,9 @@ ul.news-list
     .img
       +img-container(120%)
       margin-bottom: 10px
+    .lg_object
+      &:nth-child(n+2)
+        display: none
     .hover-img
       +xy-align
       width: 48px
@@ -425,6 +428,8 @@ ul.news-list
       svg
         fill: $green
         +centered-inside
+    img
+      display: none
     .category
       position: absolute
       display: inline-block

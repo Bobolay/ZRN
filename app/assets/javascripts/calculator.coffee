@@ -75,3 +75,7 @@ $document.ready ->
   select.on 'change', ->
     if $(this).val() != 0 && $(this).val() != "all"
       $(this).next().removeClass('error')
+
+  $document.on 'click', '.reset_calculator', ->
+    # select.next().find('.option').removeClass('selected')
+    radio.prop('checked',false)
