@@ -22,7 +22,6 @@ calculate_data = (input_data)->
   else
     window.calculator_query = input_data
 
-load_data()
 $document.on "ready", load_data
 
 $document.on "change", ".calculator-wrap", ()->

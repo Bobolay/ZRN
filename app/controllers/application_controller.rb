@@ -21,12 +21,10 @@ class ApplicationController < ActionController::Base
       table1: [{
         height: 20,
         thickness: 2,
-       
         Fv: [[500, 2543], [600, 1766]],
-        fv: [[500, 0.19]],
-        Fp: [],
-        fp: []
-      
+        fv: [[500, 0.19], [600, 0.27]],
+        Fp: [[500, 211], [600, 169]],
+        fp: [[500, 0.17], [600, 0.25]]
       }]
     }
 
