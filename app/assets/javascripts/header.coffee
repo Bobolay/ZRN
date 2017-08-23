@@ -25,7 +25,6 @@ handle_scroll = (e)->
     alert("ctrl")
   $banner = $(banner_selector)
   banner_height = $banner.height()
-
   scroll_top = $("body").scrollTop() || $(window).scrollTop()
   $top_nav = $(header_selector)
   top_nav_height = $top_nav.height()

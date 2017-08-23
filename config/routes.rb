@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: "pages#index"
+  get "calculator_data", format: "json", to: "application#calculator_data"
 
   controller :pages do
     get "about", action: "about"
